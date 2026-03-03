@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datenschutzerklärung – JV Media, Jakob Vrabitsch">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://vrabitsch-media.com/datenschutz.html">
+  <title>Datenschutz – JV Media</title>
+  <link rel="icon" href="bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="bilder/profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="logo-fallback">
+          <span class="logo-jv">JV</span>
+          <span class="logo-media">Media</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#pricing">Preise</a></li>
+        <li><a href="index.html#contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn btn-primary nav-cta">Anfrage stellen</a>
+        <button id="langToggle" onclick="toggleLang()" class="lang-toggle" aria-label="Sprache wechseln">EN</button>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#services" onclick="toggleMenu()">Leistungen</a>
+      <a href="portfolio.html" onclick="toggleMenu()">Portfolio</a>
+      <a href="index.html#about" onclick="toggleMenu()">Über uns</a>
+      <a href="index.html#pricing" onclick="toggleMenu()">Preise</a>
+      <a href="index.html#contact" onclick="toggleMenu()">Kontakt</a>
+      <a href="index.html#contact" onclick="toggleMenu()" class="btn btn-primary">Anfrage stellen</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main style="position: relative; z-index: 1; padding-top: 120px; padding-bottom: 96px;">
+    <div class="container">
+      <div style="max-width: 680px; margin: 0 auto;">
+
+        <div class="section-header" style="text-align: left; margin-bottom: 48px;">
+          <div class="section-badge">Rechtliches</div>
+          <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0; margin-top: 16px;">Datenschutzerklärung</h1>
+        </div>
+
+        <div style="
+          background: rgba(19, 19, 30, 0.55);
+          backdrop-filter: blur(20px) saturate(150%);
+          -webkit-backdrop-filter: blur(20px) saturate(150%);
+          border: 1px solid rgba(255,255,255,0.08);
+          box-shadow: 0 4px 24px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.07);
+          border-radius: 20px;
+          padding: 40px 44px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        ">
+
+          <!-- 1. Verantwortlicher -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">1. Verantwortlicher</h2>
+            <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary);">
+              Jakob Vrabitsch<br>
+              Schulstraße 20, 83646 Bad Tölz<br>
+              E-Mail: <a href="mailto:jakob@vrabitsch-media.com" style="color: #8ba4f5;">jakob@vrabitsch-media.com</a>
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 2. Welche Daten -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">2. Welche Daten wir erheben</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Diese Website erhebt <strong style="color: var(--text-primary);">ausschließlich</strong> Daten, die du uns aktiv über das Kontaktformular mitteilst:
+            </p>
+            <ul style="margin-top: 12px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span>
+                Dein Name
+              </li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span>
+                Deine E-Mail-Adresse
+              </li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                <span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span>
+                Deine Nachricht
+              </li>
+            </ul>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted); margin-top: 12px;">
+              Es werden keine Tracking-Daten, Nutzungsprofile oder Analysedaten erhoben. Diese Website verwendet kein Google Analytics, keine Werbe-Cookies und keine Drittanbieter-Tracker.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 3. Zweck und Rechtsgrundlage -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">3. Zweck &amp; Rechtsgrundlage</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Die Daten aus dem Kontaktformular werden ausschließlich zur Beantwortung deiner Anfrage und zur Aufnahme einer möglichen Geschäftsbeziehung verwendet.<br><br>
+              Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Kommunikation mit Interessenten).
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 4. EmailJS -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">4. Kontaktformular – Einsatz von EmailJS</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Das Kontaktformular verwendet den Dienst <strong style="color: var(--text-primary);">EmailJS</strong> (emailjs.com, 1209 N Orange St, Wilmington, DE, USA) zur Übermittlung von Formularinhalten per E-Mail. Die Daten werden dabei über die Server von EmailJS weitergeleitet und anschließend an jakob@vrabitsch-media.com zugestellt.<br><br>
+              EmailJS speichert Nachrichten standardmäßig nicht dauerhaft. Weitere Informationen findest du in der
+              <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer" style="color: #8ba4f5;">Datenschutzerklärung von EmailJS</a>.<br><br>
+              Das EmailJS-Script wird über den CDN-Dienst <strong style="color: var(--text-primary);">jsDelivr</strong> (cdn.jsdelivr.net, Betreiber: Prospect One, Polen) geladen. Dabei wird die IP-Adresse des Nutzers technisch an jsDelivr übertragen. jsDelivr speichert keine personenbezogenen Daten dauerhaft.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 5. Speicherdauer -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">5. Speicherdauer</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Kontaktanfragen werden so lange aufbewahrt, wie es zur Bearbeitung deiner Anfrage erforderlich ist, sowie darüber hinaus entsprechend gesetzlicher Aufbewahrungspflichten (max. 10 Jahre nach HGB). Eine Löschung kann jederzeit per E-Mail beantragt werden.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 6. Cookies / localStorage -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">6. Cookies &amp; lokaler Speicher</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Diese Website setzt <strong style="color: var(--text-primary);">keine Tracking-Cookies</strong>. Es wird ausschließlich der browsereigene <strong style="color: var(--text-primary);">localStorage</strong> genutzt, um zu speichern, ob du den Cookie-Hinweis bestätigt hast. Dieser Eintrag enthält keine personenbezogenen Daten und kann jederzeit über die Browsereinstellungen gelöscht werden.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 7. Hosting -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">7. Hosting</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Diese Website ist eine statische HTML/CSS/JavaScript-Seite. Es werden keine Server-seitigen Logs oder Nutzungsdaten durch uns erhoben.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <!-- 8. Deine Rechte -->
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">8. Deine Rechte (Art. 15–22 DSGVO)</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Du hast das Recht auf:
+            </p>
+            <ul style="margin-top: 12px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Auskunft</strong> über deine gespeicherten Daten (Art. 15)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Berichtigung</strong> unrichtiger Daten (Art. 16)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Löschung</strong> deiner Daten (Art. 17)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Einschränkung</strong> der Verarbeitung (Art. 18)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Widerspruch</strong> gegen die Verarbeitung (Art. 21)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Datenportabilität</strong> (Art. 20)</li>
+              <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;"><span style="position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(135deg, #4169e1, #8b5cf6); display: inline-block;"></span><strong style="color: var(--text-primary);">Beschwerde</strong> bei der zuständigen Aufsichtsbehörde</li>
+            </ul>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted); margin-top: 16px;">
+              Zur Ausübung deiner Rechte genügt eine formlose E-Mail an:
+              <a href="mailto:jakob@vrabitsch-media.com" style="color: #8ba4f5;">jakob@vrabitsch-media.com</a>
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <p style="font-size: 0.8rem; color: var(--text-subtle); margin: 0;">
+            Stand: März 2025
+          </p>
+
+        </div>
+
+        <p style="margin-top: 32px; font-size: 0.85rem; color: var(--text-subtle); text-align: center;">
+          <a href="impressum.html" style="color: #8ba4f5;">Impressum</a> ·
+          <a href="index.html" style="color: #8ba4f5;">Zurück zur Website</a>
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="logo footer-logo">
+          <img src="bilder/profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-fallback">
+            <span class="logo-jv">JV</span>
+            <span class="logo-media">Media</span>
+          </div>
+        </a>
+        <nav class="footer-links">
+          <a href="index.html#services">Leistungen</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="index.html#about">Über uns</a>
+          <a href="index.html#pricing">Preise</a>
+          <a href="index.html#contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p class="footer-copy">© 2025 JV Media. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
