@@ -3,6 +3,7 @@ let currentLang = 'de';
 
 function toggleLang() {
   currentLang = currentLang === 'de' ? 'en' : 'de';
+  localStorage.setItem('lang', currentLang);
   applyLang(currentLang);
 }
 
@@ -17,7 +18,7 @@ function applyLang(lang) {
     el.setAttribute('placeholder', el.getAttribute('data-placeholder-' + lang));
   });
   document.documentElement.setAttribute('lang', lang);
-  document.title = lang === 'de' ? 'JV Media \u2013 Social Media Agentur' : 'JV Media \u2013 Social Media Agency';
+  document.title = lang === 'de' ? 'JV Media' : 'JV Media';
 }
 
 function toggleMenu() {
@@ -69,44 +70,115 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   elements.forEach(el => observer.observe(el));
 })();
 
+// ── EmailJS Configuration ────────────────────────────────────────────────────
+// Setup steps:
+//   1. Go to https://emailjs.com and create a free account
+//   2. "Add New Service" → connect Gmail (jakob@vrabitsch-media.com)
+//   3. "Create New Template" → use variables: {{from_name}}, {{from_email}}, {{message}}
+//   4. Replace the three placeholder values below with your real IDs
+//      (Account → API Keys for the Public Key, Email Services for Service ID,
+//       Email Templates for Template ID)
+const EMAILJS_SERVICE_ID  = 'service_10l9e1k';
+const EMAILJS_TEMPLATE_ID = 'template_lpkzh6s';
+const EMAILJS_PUBLIC_KEY  = 'WOc8_cfcnHUXzKOva';
+
+if (typeof emailjs !== 'undefined') {
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   const form = event.target;
   const submitBtn = document.getElementById('submitBtn');
   const successMsg = document.getElementById('formSuccess');
+
+  // Validate inputs
   const inputs = form.querySelectorAll('input, textarea');
   inputs.forEach(el => el.classList.remove('error'));
   let valid = true;
   inputs.forEach(el => {
     if (!el.value.trim()) { el.classList.add('error'); valid = false; }
     if (el.type === 'email' && el.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value)) {
-      el.classList.add('error');
-      valid = false;
+      el.classList.add('error'); valid = false;
     }
   });
   if (!valid) return;
-  const nameEl = form.querySelector('[name="name"]');
-  const emailEl = form.querySelector('[name="email"]');
-  const messageEl = form.querySelector('[name="message"]');
-  const subject = encodeURIComponent('Anfrage \u00fcber JV Media Website');
-  const body = encodeURIComponent('Name: ' + nameEl.value + '\nE-Mail: ' + emailEl.value + '\n\nNachricht:\n' + messageEl.value);
-  window.location.href = 'mailto:jakob@vrabitsch-media.com?subject=' + subject + '&body=' + body;
+
+  // Loading state
   submitBtn.disabled = true;
   submitBtn.style.opacity = '0.6';
-  if (successMsg) {
-    successMsg.textContent = currentLang === 'de'
-      ? '\u2713 Danke! Dein E-Mail-Client wird ge\u00f6ffnet.'
-      : '\u2713 Thanks! Your email client will open.';
-    successMsg.classList.add('visible');
-  }
-  setTimeout(() => {
-    form.reset();
+  const btnSpan = submitBtn.querySelector('span');
+  if (btnSpan) btnSpan.textContent = currentLang === 'de' ? 'Wird gesendet\u2026' : 'Sending\u2026';
+
+  const templateParams = {
+    name:    form.querySelector('[name="name"]').value,
+    email:   form.querySelector('[name="email"]').value,
+    message: form.querySelector('[name="message"]').value,
+  };
+
+  if (typeof emailjs === 'undefined' || EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID') {
+    // EmailJS not yet configured – show setup reminder
+    if (successMsg) {
+      successMsg.style.color = '#f59e0b';
+      successMsg.textContent = currentLang === 'de'
+        ? '\u26a0\ufe0f EmailJS noch nicht konfiguriert. Bitte Service-ID in script.js eintragen.'
+        : '\u26a0\ufe0f EmailJS not configured yet. Please add your Service ID to script.js.';
+      successMsg.classList.add('visible');
+    }
     submitBtn.disabled = false;
     submitBtn.style.opacity = '';
-    if (successMsg) successMsg.classList.remove('visible');
-  }, 5000);
+    if (btnSpan) btnSpan.textContent = currentLang === 'de' ? 'Nachricht senden' : 'Send message';
+    return;
+  }
+
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+    .then(() => {
+      if (successMsg) {
+        successMsg.style.color = '';
+        successMsg.textContent = currentLang === 'de'
+          ? '\u2713 Danke! Wir melden uns bald bei dir.'
+          : '\u2713 Thanks! We\'ll be in touch soon.';
+        successMsg.classList.add('visible');
+      }
+      form.reset();
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '';
+        if (btnSpan) btnSpan.textContent = currentLang === 'de' ? 'Nachricht senden' : 'Send message';
+        if (successMsg) successMsg.classList.remove('visible');
+      }, 5000);
+    })
+    .catch(() => {
+      if (successMsg) {
+        successMsg.style.color = '#ef4444';
+        successMsg.textContent = currentLang === 'de'
+          ? '\u2717 Fehler beim Senden. Bitte versuche es erneut.'
+          : '\u2717 Error sending. Please try again.';
+        successMsg.classList.add('visible');
+      }
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
+      if (btnSpan) btnSpan.textContent = currentLang === 'de' ? 'Nachricht senden' : 'Send message';
+    });
+}
+
+// ── Cookie Consent ───────────────────────────────────────────────────────────
+(function initCookieBanner() {
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+  if (!localStorage.getItem('cookieConsent')) {
+    // Small delay so the page renders first
+    setTimeout(() => banner.classList.add('visible'), 800);
+  }
+})();
+
+function acceptCookies() {
+  localStorage.setItem('cookieConsent', '1');
+  const banner = document.getElementById('cookieBanner');
+  if (banner) banner.classList.remove('visible');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  currentLang = localStorage.getItem('lang') || 'de';
   applyLang(currentLang);
 });

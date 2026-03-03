@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="JV Media – Professioneller Videoschnitt für Content Creator und Marken, die mit starken Videos auffallen wollen.">
-  <title>JV Media – Video Editing Studio</title>
+  <meta property="og:title" content="JV Media – Social Media Agentur">
+  <meta property="og:description" content="Professioneller Video-Schnitt & Social Media Content für Creators und Unternehmen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jvmedia.de">
+  <meta property="og:image" content="https://jvmedia.de/bilder/Bild_Jakob.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>JV Media</title>
+  <link rel="icon" href="profil_bild_final_tranzperent.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -20,7 +28,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="logo">
-        <img src="logo.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(el=>el.style.display='flex')">
+        <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(el=>el.style.display='flex')">
         <div class="logo-fallback">
           <span class="logo-jv">JV</span>
           <span class="logo-media">Media</span>
@@ -30,6 +38,7 @@
       <ul class="nav-links">
         <li><a href="#services"  data-de="Leistungen" data-en="Services">Leistungen</a></li>
         <li><a href="portfolio.html" data-de="Portfolio"  data-en="Portfolio">Portfolio</a></li>
+        <li><a href="#about"     data-de="Über uns"   data-en="About">Über uns</a></li>
         <li><a href="#pricing"   data-de="Preise"     data-en="Pricing">Preise</a></li>
         <li><a href="#contact"   data-de="Kontakt"    data-en="Contact">Kontakt</a></li>
       </ul>
@@ -46,6 +55,7 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="#services"  onclick="toggleMenu()" data-de="Leistungen" data-en="Services">Leistungen</a>
       <a href="portfolio.html" onclick="toggleMenu()" data-de="Portfolio"  data-en="Portfolio">Portfolio</a>
+      <a href="#about"     onclick="toggleMenu()" data-de="Über uns"   data-en="About">Über uns</a>
       <a href="#pricing"   onclick="toggleMenu()" data-de="Preise"     data-en="Pricing">Preise</a>
       <a href="#contact"   onclick="toggleMenu()" data-de="Kontakt"    data-en="Contact">Kontakt</a>
       <a href="#contact"   onclick="toggleMenu()" class="btn btn-primary" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
@@ -125,44 +135,18 @@
             </div>
           </div>
 
-          <p class="service-desc" data-de="Kurze, aufmerksamkeitsstarke Videos, die auf Instagram, TikTok und YouTube Shorts performen. Optimiert für den Algorithmus, gestaltet für maximale Reichweite." data-en="Short, attention-grabbing videos that perform on Instagram, TikTok and YouTube Shorts. Optimised for the algorithm, designed for maximum reach.">
-            Kurze, aufmerksamkeitsstarke Videos, die auf Instagram, TikTok und YouTube Shorts performen. Optimiert für den Algorithmus, gestaltet für maximale Reichweite.
-          </p>
+          <ul class="service-features service-features-compact">
+            <li data-de="Schnitt &amp; Pacing" data-en="Cut &amp; pacing">Schnitt &amp; Pacing</li>
+            <li data-de="Color Grading" data-en="Color grading">Color Grading</li>
+            <li data-de="Captions &amp; Textelemente" data-en="Captions &amp; text">Captions &amp; Textelemente</li>
+            <li data-de="Sound Design" data-en="Sound design">Sound Design</li>
+            <li data-de="Hooks &amp; Retention" data-en="Hooks &amp; retention">Hooks &amp; Retention</li>
+            <li data-de="Untertitel" data-en="Subtitles">Untertitel</li>
+            <li data-de="Grafiken" data-en="Graphics">Grafiken</li>
+            <li data-de="2 Revisionen" data-en="2 revisions">2 Revisionen</li>
+          </ul>
 
-          <div class="service-subcategories">
-            <div class="service-subcategory">
-              <div class="subcategory-label" data-de="Formate" data-en="Formats">Formate</div>
-              <ul class="service-features">
-                <li data-de="Instagram Reels" data-en="Instagram Reels">Instagram Reels</li>
-                <li data-de="TikTok Videos" data-en="TikTok Videos">TikTok Videos</li>
-                <li data-de="YouTube Shorts" data-en="YouTube Shorts">YouTube Shorts</li>
-                <li data-de="Werbe- & Promo-Clips" data-en="Ad & promo clips">Werbe- & Promo-Clips</li>
-              </ul>
-            </div>
-            <div class="service-subcategory">
-              <div class="subcategory-label" data-de="Was du bekommst" data-en="What you get">Was du bekommst</div>
-              <ul class="service-features">
-                <li data-de="Schnitt & Pacing" data-en="Cut & pacing">Schnitt & Pacing</li>
-                <li data-de="Captions & Textelemente" data-en="Captions & text elements">Captions & Textelemente</li>
-                <li data-de="Sound Design & Musik" data-en="Sound design & music">Sound Design & Musik</li>
-                <li data-de="Hooks & Retention-Optimierung" data-en="Hooks & retention optimisation">Hooks & Retention-Optimierung</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-features-footer">
-            <div class="features-label" data-de="✦ Immer inklusive:" data-en="✦ Always included:">✦ Immer inklusive:</div>
-            <ul class="service-features service-features-inline">
-              <li data-de="Color Grading" data-en="Color grading">Color Grading</li>
-              <li data-de="Sound Design" data-en="Sound design">Sound Design</li>
-              <li data-de="Untertitel" data-en="Subtitles">Untertitel</li>
-              <li data-de="Grafiken" data-en="Graphics">Grafiken</li>
-              <li data-de="Schnelle Lieferung" data-en="Fast delivery">Schnelle Lieferung</li>
-              <li data-de="2 Revisionen" data-en="2 revisions">2 Revisionen</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="btn btn-primary" data-de="Short-form anfragen" data-en="Request short-form">Short-form anfragen</a>
+          <a href="#contact" class="btn btn-primary service-btn" data-de="Short-form anfragen" data-en="Request short-form">Short-form anfragen</a>
         </div>
 
         <!-- Card 2: Long-form -->
@@ -189,44 +173,18 @@
             </div>
           </div>
 
-          <p class="service-desc" data-de="Professionell geschnittene Long-form Videos, die Zuschauer bis zum Ende fesseln. Perfekt für YouTube-Kanäle, Podcasts, Interviews und Dokumentationen." data-en="Professionally edited long-form videos that keep viewers watching until the end. Perfect for YouTube channels, podcasts, interviews and documentaries.">
-            Professionell geschnittene Long-form Videos, die Zuschauer bis zum Ende fesseln. Perfekt für YouTube-Kanäle, Podcasts, Interviews und Dokumentationen.
-          </p>
+          <ul class="service-features service-features-compact">
+            <li data-de="Professioneller Schnitt" data-en="Professional editing">Professioneller Schnitt</li>
+            <li data-de="Color Grading" data-en="Color grading">Color Grading</li>
+            <li data-de="B-Roll &amp; Übergänge" data-en="B-roll &amp; transitions">B-Roll &amp; Übergänge</li>
+            <li data-de="Sound Design &amp; Musik" data-en="Sound design &amp; music">Sound Design &amp; Musik</li>
+            <li data-de="Kapitelmarken &amp; Timestamps" data-en="Chapter markers">Kapitelmarken &amp; Timestamps</li>
+            <li data-de="Untertitel" data-en="Subtitles">Untertitel</li>
+            <li data-de="Thumbnail Design" data-en="Thumbnail design">Thumbnail Design</li>
+            <li data-de="Unbegrenzte Revisionen" data-en="Unlimited revisions">Unbegrenzte Revisionen</li>
+          </ul>
 
-          <div class="service-subcategories">
-            <div class="service-subcategory">
-              <div class="subcategory-label" data-de="Formate" data-en="Formats">Formate</div>
-              <ul class="service-features">
-                <li data-de="YouTube Videos & Serien" data-en="YouTube videos & series">YouTube Videos & Serien</li>
-                <li data-de="Podcasts & Interviews" data-en="Podcasts & interviews">Podcasts & Interviews</li>
-                <li data-de="Dokumentationen" data-en="Documentaries">Dokumentationen</li>
-                <li data-de="Webinare & Online-Kurse" data-en="Webinars & online courses">Webinare & Online-Kurse</li>
-              </ul>
-            </div>
-            <div class="service-subcategory">
-              <div class="subcategory-label" data-de="Was du bekommst" data-en="What you get">Was du bekommst</div>
-              <ul class="service-features">
-                <li data-de="Professioneller Schnitt" data-en="Professional editing">Professioneller Schnitt</li>
-                <li data-de="Kapitelmarken & Timestamps" data-en="Chapter markers & timestamps">Kapitelmarken & Timestamps</li>
-                <li data-de="B-Roll & Übergänge" data-en="B-roll & transitions">B-Roll & Übergänge</li>
-                <li data-de="Thumbnail Design" data-en="Thumbnail design">Thumbnail Design</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-features-footer">
-            <div class="features-label" data-de="✦ Immer inklusive:" data-en="✦ Always included:">✦ Immer inklusive:</div>
-            <ul class="service-features service-features-inline">
-              <li data-de="Color Grading" data-en="Color grading">Color Grading</li>
-              <li data-de="Sound Design & Musik" data-en="Sound design & music">Sound Design & Musik</li>
-              <li data-de="Untertitel" data-en="Subtitles">Untertitel</li>
-              <li data-de="Grafiken & Animationen" data-en="Graphics & animations">Grafiken & Animationen</li>
-              <li data-de="Thumbnail Design" data-en="Thumbnail design">Thumbnail Design</li>
-              <li data-de="Unbegrenzte Revisionen" data-en="Unlimited revisions">Unbegrenzte Revisionen</li>
-            </ul>
-          </div>
-
-          <a href="#contact" class="btn btn-primary" data-de="Long-form anfragen" data-en="Request long-form">Long-form anfragen</a>
+          <a href="#contact" class="btn btn-primary service-btn" data-de="Long-form anfragen" data-en="Request long-form">Long-form anfragen</a>
         </div>
 
       </div>
@@ -338,6 +296,59 @@
           </svg>
           <span data-de="Alle Projekte ansehen" data-en="View all projects">Alle Projekte ansehen</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ÜBER UNS ═══════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <div class="section-badge" data-de="Über uns" data-en="About us">Über uns</div>
+        <h2 data-de="Das Team hinter JV Media" data-en="The team behind JV Media">Das Team hinter JV Media</h2>
+        <p data-de="Wir sind kein großes Studio – wir sind zwei Leute, die Videos lieben und wissen, wie man Content baut, der wirklich performt." data-en="We're not a big studio – we're two people who love video and know how to build content that truly performs.">
+          Wir sind kein großes Studio – wir sind zwei Leute, die Videos lieben und wissen, wie man Content baut, der wirklich performt.
+        </p>
+      </div>
+
+      <div class="about-story fade-in">
+        <p data-de="Angefangen hat alles ganz simpel – aus reiner Faszination. Was früher Spaß mit eigenen Edits war, wurde schnell zur echten Leidenschaft: das Erschaffen von Inhalten, die wirklich bewegen. Irgendwann kam der erste Auftrag, dann der zweite – und heute schneiden wir Videos für Creator und Marken, die mit starkem Content wirklich auffallen wollen." data-en="It all started simply – out of pure fascination. What began as fun with personal edits quickly became a real passion: creating content that truly moves people. One day the first project came, then the second – and today we edit videos for creators and brands that want to stand out with powerful content.">
+          Angefangen hat alles ganz simpel – aus reiner Faszination. Was früher Spaß mit eigenen Edits war, wurde schnell zur echten Leidenschaft: das Erschaffen von Inhalten, die wirklich bewegen. Irgendwann kam der erste Auftrag, dann der zweite – und heute schneiden wir Videos für Creator und Marken, die mit starkem Content wirklich auffallen wollen.
+        </p>
+      </div>
+
+      <div class="team-grid fade-in">
+
+        <!-- Jakob -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img
+              src="bilder/Bild_Jakob.jpeg"
+              alt="Jakob"
+              class="team-avatar"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="team-avatar-initials" style="display:none">J</div>
+          </div>
+          <div class="team-name">Jakob</div>
+          <div class="team-role" data-de="Founder &amp; Lead Editor" data-en="Founder &amp; Lead Editor">Founder &amp; Lead Editor</div>
+          <p class="team-bio" data-de="Zuständig für Schnitt, Storytelling und die kreative Richtung jedes Projekts." data-en="Responsible for editing, storytelling and the creative direction of every project.">
+            Zuständig für Schnitt, Storytelling und die kreative Richtung jedes Projekts.
+          </p>
+        </div>
+
+        <!-- Tyrone -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-initials">T</div>
+          </div>
+          <div class="team-name">Tyrone</div>
+          <div class="team-role" data-de="Video Editor" data-en="Video Editor">Video Editor</div>
+          <p class="team-bio" data-de="Unterstützt beim Videoschnitt und sorgt dafür, dass jedes Video termingerecht und auf den Punkt fertig ist." data-en="Supports with video editing and ensures every video is delivered on time and on point.">
+            Unterstützt beim Videoschnitt und sorgt dafür, dass jedes Video termingerecht und auf den Punkt fertig ist.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -497,7 +508,7 @@
     <div class="container">
       <div class="footer-inner">
         <a href="#home" class="logo footer-logo">
-          <img src="logo.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="logo-fallback">
             <span class="logo-jv">JV</span>
             <span class="logo-media">Media</span>
@@ -506,8 +517,11 @@
         <nav class="footer-links">
           <a href="#services"  data-de="Leistungen" data-en="Services">Leistungen</a>
           <a href="portfolio.html" data-de="Portfolio"  data-en="Portfolio">Portfolio</a>
+          <a href="#about"     data-de="Über uns"   data-en="About">Über uns</a>
           <a href="#pricing"   data-de="Preise"     data-en="Pricing">Preise</a>
           <a href="#contact"   data-de="Kontakt"    data-en="Contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
         </nav>
         <p class="footer-copy" data-de="© 2025 JV Media. Alle Rechte vorbehalten." data-en="© 2025 JV Media. All rights reserved.">
           © 2025 JV Media. Alle Rechte vorbehalten.
@@ -515,6 +529,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>Diese Website verwendet keine Tracking-Cookies. Kontaktanfragen werden sicher per
+       <a href="datenschutz.html">EmailJS</a> übermittelt.
+       <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a>
+    </p>
+    <button onclick="acceptCookies()" class="btn btn-primary btn-sm">Verstanden</button>
+  </div>
 
   <script src="script.js"></script>
 </body>

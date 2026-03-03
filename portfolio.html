@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="JV Media Portfolio – Alle Projekte. Von Short-form Reels bis zu langen YouTube-Produktionen.">
   <title>Portfolio – JV Media</title>
+  <link rel="icon" href="profil_bild_final_tranzperent.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(el=>el.style.display='flex')">
+        <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(el=>el.style.display='flex')">
         <div class="logo-fallback">
           <span class="logo-jv">JV</span>
           <span class="logo-media">Media</span>
@@ -398,7 +399,7 @@
     <div class="container">
       <div class="footer-inner">
         <a href="index.html" class="logo footer-logo">
-          <img src="logo.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="logo-fallback">
             <span class="logo-jv">JV</span>
             <span class="logo-media">Media</span>
@@ -407,8 +408,11 @@
         <nav class="footer-links">
           <a href="index.html#services"  data-de="Leistungen" data-en="Services">Leistungen</a>
           <a href="portfolio.html"       data-de="Portfolio"  data-en="Portfolio">Portfolio</a>
+          <a href="index.html#about"     data-de="Über uns"   data-en="About">Über uns</a>
           <a href="index.html#pricing"   data-de="Preise"     data-en="Pricing">Preise</a>
           <a href="index.html#contact"   data-de="Kontakt"    data-en="Contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
         </nav>
         <p class="footer-copy" data-de="© 2025 JV Media. Alle Rechte vorbehalten." data-en="© 2025 JV Media. All rights reserved.">
           © 2025 JV Media. Alle Rechte vorbehalten.
@@ -416,6 +420,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>Diese Website verwendet keine Tracking-Cookies. Kontaktanfragen werden sicher per
+       <a href="datenschutz.html">EmailJS</a> übermittelt.
+       <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a>
+    </p>
+    <button onclick="acceptCookies()" class="btn btn-primary btn-sm">Verstanden</button>
+  </div>
 
   <script src="script.js"></script>
 </body>

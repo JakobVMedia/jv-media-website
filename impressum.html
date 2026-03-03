@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impressum – JV Media, Jakob Vrabitsch">
+  <title>Impressum – JV Media</title>
+  <link rel="icon" href="profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="logo-fallback">
+          <span class="logo-jv">JV</span>
+          <span class="logo-media">Media</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#pricing">Preise</a></li>
+        <li><a href="index.html#contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contact" class="btn btn-primary nav-cta">Anfrage stellen</a>
+        <button id="langToggle" onclick="toggleLang()" class="lang-toggle" aria-label="Sprache wechseln">EN</button>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#services" onclick="toggleMenu()">Leistungen</a>
+      <a href="portfolio.html" onclick="toggleMenu()">Portfolio</a>
+      <a href="index.html#about" onclick="toggleMenu()">Über uns</a>
+      <a href="index.html#pricing" onclick="toggleMenu()">Preise</a>
+      <a href="index.html#contact" onclick="toggleMenu()">Kontakt</a>
+      <a href="index.html#contact" onclick="toggleMenu()" class="btn btn-primary">Anfrage stellen</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main style="position: relative; z-index: 1; padding-top: 120px; padding-bottom: 96px;">
+    <div class="container">
+      <div style="max-width: 680px; margin: 0 auto;">
+
+        <div class="section-header" style="text-align: left; margin-bottom: 48px;">
+          <div class="section-badge">Rechtliches</div>
+          <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0; margin-top: 16px;">Impressum</h1>
+        </div>
+
+        <div style="
+          background: rgba(19, 19, 30, 0.55);
+          backdrop-filter: blur(20px) saturate(150%);
+          -webkit-backdrop-filter: blur(20px) saturate(150%);
+          border: 1px solid rgba(255,255,255,0.08);
+          box-shadow: 0 4px 24px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.07);
+          border-radius: 20px;
+          padding: 40px 44px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        ">
+
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">Angaben gemäß § 5 TMG</h2>
+            <p style="font-size: 1rem; line-height: 1.8; color: var(--text-primary);">
+              Jakob Vrabitsch<br>
+              Schulstraße 20<br>
+              83646 Bad Tölz<br>
+              Deutschland
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">Kontakt</h2>
+            <p style="font-size: 1rem; line-height: 1.8; color: var(--text-primary);">
+              E-Mail: <a href="mailto:jakob@vrabitsch-media.com" style="color: #8ba4f5;">jakob@vrabitsch-media.com</a>
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+            <p style="font-size: 1rem; line-height: 1.8; color: var(--text-primary);">
+              Jakob Vrabitsch<br>
+              Schulstraße 20, 83646 Bad Tölz
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">EU-Streitschlichtung</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+              <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style="color: #8ba4f5;">https://ec.europa.eu/consumers/odr</a><br>
+              Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            </p>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted); margin-top: 12px;">
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </section>
+
+          <div style="height: 1px; background: rgba(255,255,255,0.07);"></div>
+
+          <section>
+            <h2 style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 16px;">Haftung für Inhalte</h2>
+            <p style="font-size: 0.92rem; line-height: 1.8; color: var(--text-muted);">
+              Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach
+              den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
+              jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen
+              oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+              Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+              Gesetzen bleiben hiervon unberührt.
+            </p>
+          </section>
+
+        </div>
+
+        <p style="margin-top: 32px; font-size: 0.85rem; color: var(--text-subtle); text-align: center;">
+          <a href="datenschutz.html" style="color: #8ba4f5;">Datenschutzerklärung</a> ·
+          <a href="index.html" style="color: #8ba4f5;">Zurück zur Website</a>
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="logo footer-logo">
+          <img src="profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-fallback">
+            <span class="logo-jv">JV</span>
+            <span class="logo-media">Media</span>
+          </div>
+        </a>
+        <nav class="footer-links">
+          <a href="index.html#services">Leistungen</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="index.html#about">Über uns</a>
+          <a href="index.html#pricing">Preise</a>
+          <a href="index.html#contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p class="footer-copy">© 2025 JV Media. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
