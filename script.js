@@ -28,6 +28,17 @@ function toggleMenu() {
   hamburger.classList.toggle('open', isOpen);
 }
 
+function setPackage(btn) {
+  const pkg = btn.getAttribute('data-package-' + currentLang)
+            || btn.getAttribute('data-package-de');
+  const textarea = document.querySelector('[name="message"]');
+  if (textarea && pkg) {
+    textarea.value = currentLang === 'de'
+      ? 'Ich interessiere mich für: ' + pkg + '\n\n'
+      : 'I\'m interested in: ' + pkg + '\n\n';
+  }
+}
+
 document.addEventListener('click', function (e) {
   const menu = document.getElementById('mobileMenu');
   const hamburger = document.getElementById('hamburger');
