@@ -11,6 +11,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vrabitsch-media.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Blog-Artikel werden hier hinzugefügt, z.B.:
+  <url>
+    <loc>https://vrabitsch-media.com/blog/DATEINAME.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
+  <url>
     <loc>https://vrabitsch-media.com/impressum.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
+  <title>Blog – Videoschnitt Tipps & Social Media Insights | JV Media</title>
+  <meta name="description" content="Blog von JV Media: Tipps zu Videoschnitt, Social Media Marketing, Content Creation und YouTube-Wachstum. Jetzt lesen und dein Video-Game verbessern!">
+  <meta name="author" content="Jakob Vrabitsch">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+  <!-- ── Canonical & hreflang ──────────────────────────────────────────────── -->
+  <link rel="canonical" href="https://vrabitsch-media.com/blog.html">
+  <link rel="alternate" hreflang="de" href="https://vrabitsch-media.com/blog.html">
+  <link rel="alternate" hreflang="en" href="https://vrabitsch-media.com/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://vrabitsch-media.com/blog.html">
+
+  <!-- ── Open Graph ────────────────────────────────────────────────────────── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vrabitsch-media.com/blog.html">
+  <meta property="og:title" content="Blog – Videoschnitt Tipps & Social Media Insights | JV Media">
+  <meta property="og:description" content="Tipps zu Videoschnitt, Social Media Marketing und Content Creation von JV Media.">
+  <meta property="og:image" content="https://vrabitsch-media.com/bilder/Bild_Jakob.jpeg">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="JV Media">
+
+  <!-- ── Twitter Card ──────────────────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog – Videoschnitt Tipps & Social Media Insights | JV Media">
+  <meta name="twitter:description" content="Tipps zu Videoschnitt, Social Media Marketing und Content Creation von JV Media.">
+  <meta name="twitter:image" content="https://vrabitsch-media.com/bilder/Bild_Jakob.jpeg">
+
+  <!-- ── Structured Data ───────────────────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vrabitsch-media.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://vrabitsch-media.com/blog.html"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="bilder/profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(el=>el.style.display='flex')">
+        <div class="logo-fallback">
+          <span class="logo-jv">JV</span>
+          <span class="logo-media">Media</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#services"  data-de="Leistungen" data-en="Services">Leistungen</a></li>
+        <li><a href="portfolio.html" data-de="Portfolio" data-en="Portfolio">Portfolio</a></li>
+        <li><a href="index.html#about"     data-de="Über uns"   data-en="About">Über uns</a></li>
+        <li><a href="blog.html" class="nav-active" data-de="Blog" data-en="Blog">Blog</a></li>
+        <li><a href="index.html#pricing"   data-de="Preise"     data-en="Pricing">Preise</a></li>
+        <li><a href="index.html#contact"   data-de="Kontakt"    data-en="Contact">Kontakt</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
+        <a href="index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#services" onclick="toggleMenu()" data-de="Leistungen" data-en="Services">Leistungen</a>
+      <a href="portfolio.html"      onclick="toggleMenu()" data-de="Portfolio"  data-en="Portfolio">Portfolio</a>
+      <a href="index.html#about"    onclick="toggleMenu()" data-de="Über uns"   data-en="About">Über uns</a>
+      <a href="blog.html"           onclick="toggleMenu()" data-de="Blog"       data-en="Blog">Blog</a>
+      <a href="index.html#pricing"  onclick="toggleMenu()" data-de="Preise"     data-en="Pricing">Preise</a>
+      <a href="index.html#contact"  onclick="toggleMenu()" data-de="Kontakt"    data-en="Contact">Kontakt</a>
+      <a href="index.html#contact"  onclick="toggleMenu()" class="btn btn-primary" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════ PAGE HERO ══════════════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge" data-de="Wissen & Insights" data-en="Knowledge & Insights">Wissen & Insights</div>
+        <h1 class="page-hero-title" data-de="Blog" data-en="Blog">Blog</h1>
+        <p data-de="Tipps, Tricks und Insights rund um Videoschnitt, Content Creation und Social Media – damit dein Content noch besser performt." data-en="Tips, tricks and insights about video editing, content creation and social media – so your content performs even better.">
+          Tipps, Tricks und Insights rund um Videoschnitt, Content Creation und Social Media – damit dein Content noch besser performt.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ BLOG GRID ══════════════════════════════ -->
+  <section class="section section-alt" id="artikel">
+    <div class="container">
+      <div class="blog-grid" id="blogGrid">
+
+        <!-- Hinweis wenn keine Artikel vorhanden -->
+        <div class="blog-empty fade-in" id="blogEmpty">
+          <p data-de="Hier erscheinen bald spannende Artikel rund um Videoschnitt, Content Creation und Social Media." data-en="Exciting articles about video editing, content creation and social media are coming soon.">
+            Hier erscheinen bald spannende Artikel rund um Videoschnitt, Content Creation und Social Media.
+          </p>
+        </div>
+
+        <!--
+          ═══ NEUEN BLOG-ARTIKEL HIER EINFÜGEN ═══
+          Template für einen neuen Artikel:
+
+          <a href="blog/DATEINAME.html" class="blog-card fade-in">
+            <div class="blog-card-badge" data-de="KATEGORIE" data-en="CATEGORY">KATEGORIE</div>
+            <h2 class="blog-card-title" data-de="TITEL DE" data-en="TITEL EN">TITEL DE</h2>
+            <p class="blog-card-excerpt" data-de="EXCERPT DE" data-en="EXCERPT EN">EXCERPT DE</p>
+            <div class="blog-card-meta">
+              <span data-de="Monat Jahr" data-en="Month Year">Monat Jahr</span>
+              <span data-de="X Min. Lesezeit" data-en="X min read">X Min. Lesezeit</span>
+            </div>
+            <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          </a>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACT CTA ══════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge" data-de="Zusammenarbeiten" data-en="Work together">Zusammenarbeiten</div>
+        <h2 data-de="Bereit für besseren Content?" data-en="Ready for better content?">Bereit für besseren Content?</h2>
+        <p data-de="Lass uns gemeinsam Videos erstellen, die wirklich performen." data-en="Let's create videos together that truly perform.">
+          Lass uns gemeinsam Videos erstellen, die wirklich performen.
+        </p>
+        <div class="portfolio-cta-buttons">
+          <a href="index.html#contact" class="btn btn-primary btn-lg" data-de="Jetzt anfragen" data-en="Get started">Jetzt anfragen</a>
+          <a href="portfolio.html" class="btn btn-outline btn-lg" data-de="Portfolio ansehen" data-en="View portfolio">Portfolio ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="logo footer-logo">
+          <img src="bilder/profil_bild_final_tranzperent.png" alt="JV Media" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-fallback">
+            <span class="logo-jv">JV</span>
+            <span class="logo-media">Media</span>
+          </div>
+        </a>
+        <nav class="footer-links">
+          <a href="index.html#services"  data-de="Leistungen" data-en="Services">Leistungen</a>
+          <a href="portfolio.html"       data-de="Portfolio"  data-en="Portfolio">Portfolio</a>
+          <a href="index.html#about"     data-de="Über uns"   data-en="About">Über uns</a>
+          <a href="blog.html"            data-de="Blog"       data-en="Blog">Blog</a>
+          <a href="index.html#pricing"   data-de="Preise"     data-en="Pricing">Preise</a>
+          <a href="index.html#contact"   data-de="Kontakt"    data-en="Contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p class="footer-copy" data-de="© 2025 JV Media. Alle Rechte vorbehalten." data-en="© 2025 JV Media. All rights reserved.">
+          © 2025 JV Media. Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>Diese Website verwendet keine Tracking-Cookies. Kontaktanfragen werden sicher per
+       <a href="datenschutz.html">EmailJS</a> übermittelt.
+       <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a>
+    </p>
+    <button onclick="acceptCookies()" class="btn btn-primary btn-sm">Verstanden</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
