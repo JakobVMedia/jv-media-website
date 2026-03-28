@@ -15,13 +15,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog-Artikel werden hier hinzugefügt, z.B.:
   <url>
-    <loc>https://vrabitsch-media.com/blog/DATEINAME.html</loc>
+    <loc>https://vrabitsch-media.com/blog/videoschnitt-youtube-wachstum.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  -->
   <url>
     <loc>https://vrabitsch-media.com/impressum.html</loc>
     <changefreq>yearly</changefreq>
