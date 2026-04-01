@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vrabitsch-media.com/blog/ki-videoschnitt-content-creator.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://vrabitsch-media.com/blog/videoschnitt-social-media.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
