@@ -22,3 +22,7 @@ Jakob Vrabitsch runs JV Media, a video editing studio based in Austria. Nearly 2
 ## Contact
 Website: https://vrabitsch-media.com
 Portfolio: https://vrabitsch-media.com/portfolio.html
+
+## Service Pages
+- [YouTube Video Editor](/youtube-video-editor.html)
+- [Videoschnitt Freelancer](/videoschnitt-freelancer.html)
