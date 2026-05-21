@@ -8,16 +8,15 @@
   <link rel="canonical" href="https://vrabitsch-media.com/datenschutz.html">
   <title>Datenschutz – JV Media</title>
   <link rel="icon" href="bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
@@ -37,8 +36,8 @@
         <li><a href="index.html#contact">Kontakt</a></li>
       </ul>
       <div class="nav-right">
-        <a href="index.html#contact" class="btn btn-primary nav-cta">Anfrage stellen</a>
-        <button id="langToggle" onclick="toggleLang()" class="lang-toggle" aria-label="Sprache wechseln">EN</button>
+        <button id="langToggle" onclick="toggleLang()" class="lang-toggle" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -60,7 +59,7 @@
       <div style="max-width: 680px; margin: 0 auto;">
 
         <div class="section-header" style="text-align: left; margin-bottom: 48px;">
-          <div class="section-badge">Rechtliches</div>
+          <div class="section-eyebrow">Rechtliches</div>
           <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0; margin-top: 16px;">Datenschutzerklärung</h1>
         </div>
 

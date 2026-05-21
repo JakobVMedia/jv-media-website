@@ -93,16 +93,15 @@
   </script>
 
   <link rel="icon" href="../bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar" id="navbar">
@@ -125,8 +124,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="../index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="../index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -155,11 +154,11 @@
 
         <div class="blog-article-header">
           <div class="blog-article-meta">
-            <div class="section-badge" data-de="YouTube" data-en="YouTube">YouTube</div>
+            <div class="section-eyebrow" data-de="YouTube" data-en="YouTube">YouTube</div>
             <span class="blog-article-date" data-de="April 2026" data-en="April 2026">April 2026</span>
             <span class="blog-article-date" data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <h1 data-de="So findest du den richtigen Video Editor für deinen YouTube-Kanal" data-en="How to Find the Right Video Editor for Your YouTube Channel">So findest du den richtigen Video Editor für deinen YouTube-Kanal</h1>
+          <h1 data-de="So findest du den richtigen Video Editor für deinen YouTube-Kanal" data-en="How to Find the Right Video Editor for Your YouTube Channel">So findest du den richtigen Video Editor für deinen <em>YouTube-Kanal</em></h1>
           <p class="blog-article-intro" data-de="Du willst deinen YouTube-Kanal skalieren, aber die Editing-Arbeit frisst dir die ganze Zeit weg. Einen Editor holen klingt logisch. Aber den falschen zu wählen, kann dich mehr kosten als alles selbst zu schneiden." data-en="You want to scale your YouTube channel, but editing eats up all your time. Hiring an editor sounds logical. But choosing the wrong one can cost you more than doing it yourself.">Du willst deinen YouTube-Kanal skalieren, aber die Editing-Arbeit frisst dir die ganze Zeit weg. Einen Editor holen klingt logisch. Aber den falschen zu wählen, kann dich mehr kosten als alles selbst zu schneiden.</p>
         </div>
 

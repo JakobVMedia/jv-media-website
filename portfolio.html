@@ -54,16 +54,15 @@
   </script>
 
   <link rel="icon" href="bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar" id="navbar">
@@ -86,8 +85,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -111,13 +110,10 @@
     <div class="hero-glow hero-glow-2"></div>
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-badge" data-de="Unsere Arbeit" data-en="Our Work">Unsere Arbeit</div>
+        <div class="section-eyebrow" data-de="01 — Unsere Arbeit" data-en="01 — Our Work">01 — Unsere Arbeit</div>
         <h1 class="page-hero-title" data-de="Video Editor Portfolio für YouTube, Reels & Shorts" data-en="Video editor portfolio for YouTube, reels & shorts">Video Editor Portfolio für YouTube, Reels & Shorts</h1>
         <p data-de="Von kurzen Reels bis zu langen YouTube-Produktionen – hier siehst du eine Auswahl unserer Arbeiten." data-en="From short reels to long YouTube productions – here's a selection of our work.">
           Von kurzen Reels bis zu langen YouTube-Produktionen – hier siehst du eine Auswahl unserer Arbeiten.
-        </p>
-        <p data-de="Mehr Gedanken zu Videoschnitt, Retention und YouTube-Wachstum findest du auch im <a href="blog.html">Blog</a>. Wenn du direkt nach dem passenden Service suchst, schau auf <a href="youtube-video-editor.html">YouTube Video Editor</a> oder <a href="videoschnitt-freelancer.html">Videoschnitt Freelancer</a>." data-en="You can also find more thoughts on editing, retention and YouTube growth in the <a href="blog.html">blog</a>.">
-          Mehr Gedanken zu Videoschnitt, Retention und YouTube-Wachstum findest du auch im <a href="blog.html">Blog</a>. Wenn du direkt nach dem passenden Service suchst, schau auf <a href="youtube-video-editor.html">YouTube Video Editor</a> oder <a href="videoschnitt-freelancer.html">Videoschnitt Freelancer</a>.
         </p>
       </div>
     </div>
@@ -581,7 +577,7 @@
   <section class="section" id="testimonials">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-badge" data-de="Kundenstimmen" data-en="Testimonials">Kundenstimmen</div>
+        <div class="section-eyebrow" data-de="Kundenstimmen" data-en="Testimonials">Kundenstimmen</div>
         <h2 data-de="Was unsere Kunden sagen" data-en="What our clients say">Was unsere Kunden sagen</h2>
         <p data-de="Echtes Feedback von echten Kunden – weil gute Arbeit für sich spricht." data-en="Real feedback from real clients – because great work speaks for itself.">
           Echtes Feedback von echten Kunden – weil gute Arbeit für sich spricht.
@@ -871,7 +867,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-badge" data-de="Zusammenarbeiten" data-en="Work together">Zusammenarbeiten</div>
+        <div class="section-eyebrow" data-de="Zusammenarbeiten" data-en="Work together">Zusammenarbeiten</div>
         <h2 data-de="Bereit für dein Projekt?" data-en="Ready for your project?">Bereit für dein Projekt?</h2>
         <p data-de="Lass uns gemeinsam etwas schaffen, das wirklich auffällt." data-en="Let's create something together that truly stands out.">
           Lass uns gemeinsam etwas schaffen, das wirklich auffällt.

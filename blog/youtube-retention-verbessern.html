@@ -88,15 +88,15 @@
   </script>
 
   <link rel="icon" href="../bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -118,8 +118,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="../index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="../index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -147,11 +147,11 @@
 
         <div class="blog-article-header">
           <div class="blog-article-meta">
-            <div class="section-badge" data-de="YouTube" data-en="YouTube">YouTube</div>
+            <div class="section-eyebrow" data-de="YouTube" data-en="YouTube">YouTube</div>
             <span class="blog-article-date" data-de="April 2026" data-en="April 2026">April 2026</span>
             <span class="blog-article-date" data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <h1 data-de="YouTube Retention verbessern: Warum Schnitt 2026 noch wichtiger ist" data-en="Improve YouTube Retention: Why Editing Matters Even More in 2026">YouTube Retention verbessern: Warum Schnitt 2026 noch wichtiger ist</h1>
+          <h1 data-de="YouTube Retention verbessern: Warum Schnitt 2026 noch wichtiger ist" data-en="Improve YouTube Retention: Why Editing Matters Even More in 2026">YouTube Retention <em>verbessern</em>: Warum Schnitt 2026 noch wichtiger ist</h1>
           <p class="blog-article-intro" data-de="Du gibst dir Mühe mit deinem Content, aber die Watch Time bleibt schwach? Dann liegt das Problem oft nicht am Thema. Sondern am Schnitt." data-en="You're putting effort into your content, but watch time is still weak? Then the problem often isn't the topic. It's the editing.">Du gibst dir Mühe mit deinem Content, aber die Watch Time bleibt schwach? Dann liegt das Problem oft nicht am Thema. Sondern am Schnitt.</p>
         </div>
 

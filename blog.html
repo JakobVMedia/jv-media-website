@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de" data-lang="de">
 <head>
   <meta charset="UTF-8">
@@ -54,16 +54,15 @@
   </script>
 
   <link rel="icon" href="bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar" id="navbar">
@@ -86,8 +85,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -111,13 +110,10 @@
     <div class="hero-glow hero-glow-2"></div>
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-badge" data-de="Wissen & Insights" data-en="Knowledge & Insights">Wissen & Insights</div>
+        <div class="section-eyebrow" data-de="01 — Wissen & Insights" data-en="01 — Knowledge & Insights">01 — Wissen & Insights</div>
         <h1 class="page-hero-title" data-de="Blog" data-en="Blog">Blog</h1>
         <p data-de="Tipps, Tricks und Insights rund um Videoschnitt, Content Creation und Social Media – damit dein Content noch besser performt." data-en="Tips, tricks and insights about video editing, content creation and social media – so your content performs even better.">
           Tipps, Tricks und Insights rund um Videoschnitt, Content Creation und Social Media – damit dein Content noch besser performt.
-        </p>
-        <p data-de="Wenn du direkt nach einem passenden Angebot suchst, geh über <a href="youtube-video-editor.html">YouTube Video Editor</a> oder <a href="videoschnitt-freelancer.html">Videoschnitt Freelancer</a> weiter." data-en="If you want the matching offer right away, continue via <a href="youtube-video-editor.html">YouTube video editor</a> or <a href="videoschnitt-freelancer.html">video editing freelancer</a>.">
-          Wenn du direkt nach einem passenden Angebot suchst, geh über <a href="youtube-video-editor.html">YouTube Video Editor</a> oder <a href="videoschnitt-freelancer.html">Videoschnitt Freelancer</a> weiter.
         </p>
       </div>
     </div>
@@ -136,7 +132,7 @@
             <span data-de="April 2026" data-en="April 2026">April 2026</span>
             <span data-de="5 Min. Lesezeit" data-en="5 min read">5 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <a href="blog/tiktok-videos-schneiden.html" class="blog-card fade-in">
@@ -147,7 +143,7 @@
             <span data-de="April 2026" data-en="April 2026">April 2026</span>
             <span data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <a href="blog/youtube-video-editor-inhouse-oder-freelancer.html" class="blog-card fade-in">
@@ -158,7 +154,7 @@
             <span data-de="April 2026" data-en="April 2026">April 2026</span>
             <span data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <a href="blog/reels-schneiden-lassen.html" class="blog-card fade-in">
@@ -169,7 +165,7 @@
             <span data-de="April 2026" data-en="April 2026">April 2026</span>
             <span data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <a href="blog/youtube-retention-verbessern.html" class="blog-card fade-in">
@@ -180,7 +176,7 @@
             <span data-de="April 2026" data-en="April 2026">April 2026</span>
             <span data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <!-- Hinweis wenn keine Artikel vorhanden (ausgeblendet) -->
@@ -222,7 +218,7 @@
             <span data-de="März 2026" data-en="March 2026">März 2026</span>
             <span data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <a href="blog/videoschnitt-youtube-wachstum.html" class="blog-card fade-in">
@@ -233,7 +229,7 @@
             <span data-de="März 2026" data-en="March 2026">März 2026</span>
             <span data-de="5 Min. Lesezeit" data-en="5 min read">5 Min. Lesezeit</span>
           </div>
-          <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+          <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
         </a>
 
         <!--
@@ -248,7 +244,7 @@
               <span data-de="Monat Jahr" data-en="Month Year">Monat Jahr</span>
               <span data-de="X Min. Lesezeit" data-en="X min read">X Min. Lesezeit</span>
             </div>
-            <span class="blog-card-read" data-de="Artikel lesen →" data-en="Read article →">Artikel lesen →</span>
+            <span class="blog-card-read" data-de="Artikel lesen" data-en="Read article">Artikel lesen</span>
           </a>
         -->
 
@@ -260,7 +256,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-badge" data-de="Zusammenarbeiten" data-en="Work together">Zusammenarbeiten</div>
+        <div class="section-eyebrow" data-de="Zusammenarbeiten" data-en="Work together">Zusammenarbeiten</div>
         <h2 data-de="Bereit für besseren Content?" data-en="Ready for better content?">Bereit für besseren Content?</h2>
         <p data-de="Lass uns gemeinsam Videos erstellen, die wirklich performen." data-en="Let's create videos together that truly perform.">
           Lass uns gemeinsam Videos erstellen, die wirklich performen.

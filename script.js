@@ -2,15 +2,32 @@
 let currentLang = 'de';
 
 function toggleLang() {
+  const btn = document.getElementById('langToggle');
   currentLang = currentLang === 'de' ? 'en' : 'de';
   localStorage.setItem('lang', currentLang);
-  applyLang(currentLang);
+  if (btn && btn.querySelector('.lang-toggle-label')) {
+    btn.classList.add('flipping');
+    setTimeout(() => {
+      applyLang(currentLang);
+      btn.classList.remove('flipping');
+      btn.classList.add('priming');
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => btn.classList.remove('priming'));
+      });
+    }, 380);
+  } else {
+    applyLang(currentLang);
+  }
 }
 
 function applyLang(lang) {
   document.documentElement.setAttribute('data-lang', lang);
   const btn = document.getElementById('langToggle');
-  if (btn) btn.textContent = lang === 'de' ? 'EN' : 'DE';
+  if (btn) {
+    const label = btn.querySelector('.lang-toggle-label');
+    if (label) label.textContent = lang === 'de' ? 'EN' : 'DE';
+    else btn.textContent = lang === 'de' ? 'EN' : 'DE';
+  }
   document.querySelectorAll('[data-de][data-en]').forEach(el => {
     el.textContent = el.getAttribute('data-' + lang);
   });

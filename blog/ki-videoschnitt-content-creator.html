@@ -93,16 +93,15 @@
   </script>
 
   <link rel="icon" href="../bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar" id="navbar">
@@ -125,8 +124,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="../index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="../index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -155,11 +154,11 @@
 
         <div class="blog-article-header">
           <div class="blog-article-meta">
-            <div class="section-badge" data-de="KI &amp; Videoschnitt" data-en="AI &amp; Video Editing">KI &amp; Videoschnitt</div>
+            <div class="section-eyebrow" data-de="KI &amp; Videoschnitt" data-en="AI &amp; Video Editing">KI &amp; Videoschnitt</div>
             <span class="blog-article-date" data-de="April 2026" data-en="April 2026">April 2026</span>
             <span class="blog-article-date" data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <h1 data-de="KI im Videoschnitt: So nutzt du AI Tools als Content Creator richtig" data-en="AI in Video Editing: How to Use AI Tools as a Content Creator">KI im Videoschnitt: So nutzt du AI Tools als Content Creator richtig</h1>
+          <h1 data-de="KI im Videoschnitt: So nutzt du AI Tools als Content Creator richtig" data-en="AI in Video Editing: How to Use AI Tools as a Content Creator">KI im <em>Videoschnitt</em>: So nutzt du AI Tools als Content Creator richtig</h1>
           <p class="blog-article-intro" data-de="KI-Tools versprechen schnelleren Videoschnitt. Aber welche bringen wirklich was? Und wo ist KI noch mehr Hype als Hilfe? Eine ehrliche Einschätzung." data-en="AI tools promise faster video editing. But which ones actually deliver? And where is AI still more hype than help? An honest assessment.">KI-Tools versprechen schnelleren Videoschnitt. Aber welche bringen wirklich was? Und wo ist KI noch mehr Hype als Hilfe? Eine ehrliche Einschätzung.</p>
         </div>
 

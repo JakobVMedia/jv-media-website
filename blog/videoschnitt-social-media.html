@@ -93,16 +93,15 @@
   </script>
 
   <link rel="icon" href="../bilder/profil_bild_final_tranzperent.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <!-- Animated background canvas -->
-  <div class="bg-canvas" aria-hidden="true">
-    <div class="bg-blob bg-blob-1"></div>
-    <div class="bg-blob bg-blob-2"></div>
-    <div class="bg-blob bg-blob-3"></div>
-  </div>
+  <!-- Subtle grain texture -->
+  <div class="bg-grain" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar" id="navbar">
@@ -125,8 +124,8 @@
       </ul>
 
       <div class="nav-right">
-        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
-        <a href="../index.html#contact" class="btn btn-primary nav-cta" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
+        <a href="../index.html#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -155,11 +154,11 @@
 
         <div class="blog-article-header">
           <div class="blog-article-meta">
-            <div class="section-badge" data-de="Videoschnitt" data-en="Video Editing">Videoschnitt</div>
+            <div class="section-eyebrow" data-de="Videoschnitt" data-en="Video Editing">Videoschnitt</div>
             <span class="blog-article-date" data-de="März 2026" data-en="March 2026">März 2026</span>
             <span class="blog-article-date" data-de="4 Min. Lesezeit" data-en="4 min read">4 Min. Lesezeit</span>
           </div>
-          <h1 data-de="Warum guter Videoschnitt auf Social Media den Unterschied macht" data-en="Why Good Video Editing Makes the Difference on Social Media">Warum guter Videoschnitt auf Social Media den Unterschied macht</h1>
+          <h1 data-de="Warum guter Videoschnitt auf Social Media den Unterschied macht" data-en="Why Good Video Editing Makes the Difference on Social Media">Warum guter Videoschnitt auf Social Media den <em>Unterschied</em> macht</h1>
           <p class="blog-article-intro" data-de="Jeder kann heute ein Video aufnehmen. Handy raus, Record drücken, hochladen. Aber zwischen einem Video das ignoriert wird und einem das explodiert liegt ein einziger Faktor: der Schnitt." data-en="Anyone can record a video today. Pull out your phone, hit record, upload. But between a video that gets ignored and one that explodes, there's one single factor: the edit.">Jeder kann heute ein Video aufnehmen. Handy raus, Record drücken, hochladen. Aber zwischen einem Video das ignoriert wird und einem das explodiert liegt ein einziger Faktor: der Schnitt.</p>
         </div>
 
