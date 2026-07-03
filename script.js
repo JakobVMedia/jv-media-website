@@ -98,6 +98,72 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   elements.forEach(el => observer.observe(el));
 })();
 
+// ── Erstgespräch-Buchung ─────────────────────────────────────────────────────
+// Cal.com- oder Calendly-Link hier eintragen (z. B. 'https://cal.com/jakob-vrabitsch/15min').
+// Solange der String leer ist, führen alle [data-booking]-Buttons zum Kontaktformular.
+const BOOKING_URL = '';
+
+(function initBooking() {
+  if (!BOOKING_URL) return;
+  document.querySelectorAll('[data-booking]').forEach(el => {
+    el.href = BOOKING_URL;
+    el.target = '_blank';
+    el.rel = 'noopener noreferrer';
+    el.removeAttribute('hidden');
+  });
+})();
+
+// ── Hero-Stats: Zähler animieren beim ersten Sichtbarwerden ─────────────────
+(function initCountUp() {
+  const numbers = document.querySelectorAll('.hero-stats .stat-number');
+  if (!numbers.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const animate = el => {
+    const raw = el.textContent.trim();
+    const match = raw.match(/^(\d+)(.*)$/);
+    if (!match) return;
+    const target = parseInt(match[1], 10);
+    const suffix = match[2] || '';
+    const duration = 1400;
+    const start = performance.now();
+    const tick = now => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+  numbers.forEach(el => observer.observe(el));
+})();
+
+// ── Filmstrip: laufender Timecode (25 fps) ───────────────────────────────────
+(function initTimecode() {
+  const el = document.getElementById('filmstripTimecode');
+  if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const start = performance.now();
+  let last = '';
+  const pad = n => String(n).padStart(2, '0');
+  const tick = now => {
+    const elapsed = (now - start) / 1000;
+    const f = Math.floor((elapsed % 1) * 25);
+    const s = Math.floor(elapsed) % 60;
+    const m = Math.floor(elapsed / 60) % 60;
+    const h = Math.floor(elapsed / 3600);
+    const tc = pad(h) + ':' + pad(m) + ':' + pad(s) + ':' + pad(f);
+    if (tc !== last) { el.textContent = tc; last = tc; }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+})();
+
 // ── EmailJS Configuration ────────────────────────────────────────────────────
 // Setup steps:
 //   1. Go to https://emailjs.com and create a free account

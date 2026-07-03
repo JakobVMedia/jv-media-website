@@ -2044,3 +2044,320 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .service-price-indicator { order: unset; margin-left: 0; }
   .service-card-header { flex-wrap: wrap; gap: 16px; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   2026-07 Upgrade: Filmstrip, FAQ, Proof-Badges, Micro-Animationen
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Portfolio: Meta-Zeile mit Proof-Badge (Likes/Views) ───────────────── */
+.portfolio-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.portfolio-stat {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.portfolio-stat::before {
+  content: '·';
+  margin-right: 12px;
+  color: var(--text-subtle);
+}
+
+/* ─── Portfolio: sanfter Hover-Zoom auf Thumbnails ──────────────────────── */
+.portfolio-yt-link {
+  transition: filter var(--transition), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.portfolio-item:hover .portfolio-yt-link {
+  transform: scale(1.04);
+}
+
+/* Gestaffeltes Einblenden für alle Grid-Positionen (3-Spalten-Raster) */
+.portfolio-grid .portfolio-item:nth-child(3n+2) { transition-delay: 0.08s; }
+.portfolio-grid .portfolio-item:nth-child(3n)   { transition-delay: 0.16s; }
+
+/* ─── Hero: Chrome-Glanz läuft einmalig über die italic-Zeile ───────────── */
+.hero-title em {
+  background-size: 100% 260%;
+  background-position: 0 18%;
+  animation: fadeSlideUp 0.8s 0.1s ease both, chromeShine 2.6s cubic-bezier(0.4, 0, 0.2, 1) 1s both;
+}
+@keyframes chromeShine {
+  0%   { background-position: 0 130%; }
+  100% { background-position: 0 18%; }
+}
+
+/* ─── Filmstrip: Editor-Timeline mit laufenden Projekt-Thumbnails ───────── */
+:root { --rec: #ff4a4a; }
+
+.hero-filmstrip {
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 0 20px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+/* Timecode-Ruler über dem Band */
+.filmstrip-ruler {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 32px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+.ruler-ticks {
+  flex: 1;
+  height: 8px;
+  align-self: flex-end;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.14) 0, rgba(255, 255, 255, 0.14) 1px,
+    transparent 1px, transparent 12px
+  );
+  background-position: bottom;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+.ruler-tc {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.rec-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rec);
+  box-shadow: 0 0 8px rgba(255, 74, 74, 0.7);
+  animation: recPulse 1.6s ease-in-out infinite;
+}
+@keyframes recPulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.25; }
+}
+
+/* Laufendes Band – Farbe immer an */
+.filmstrip-viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+.filmstrip-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: filmstripScroll 60s linear infinite;
+  will-change: transform;
+}
+.hero-filmstrip:hover .filmstrip-track {
+  animation-play-state: paused;
+}
+@keyframes filmstripScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.filmstrip-frame {
+  position: relative;
+  width: 212px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.filmstrip-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Einheitlicher Play-Button auf jedem Frame */
+.filmstrip-frame::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(8, 8, 10, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: transform var(--transition), background var(--transition);
+}
+.filmstrip-frame::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-38%, -50%);
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.95);
+  transition: transform var(--transition);
+}
+.hero-filmstrip:hover .filmstrip-frame::before {
+  background: rgba(8, 8, 10, 0.75);
+}
+
+/* Playhead: fixe Abspielmarke, Clips laufen darunter durch */
+.filmstrip-playhead {
+  position: absolute;
+  left: 50%;
+  top: 34px;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.25) 100%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+}
+.filmstrip-playhead::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 7px 5px 0 5px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+@media (max-width: 600px) {
+  .filmstrip-frame { width: 150px; height: 85px; }
+  .hero-filmstrip { padding: 0 0 14px; }
+  .filmstrip-ruler { padding: 10px 20px 8px; }
+  .ruler-label { display: none; }
+  .filmstrip-frame::before { width: 28px; height: 28px; }
+  .filmstrip-frame::after { border-width: 5px 0 5px 8px; }
+  .filmstrip-playhead { top: 30px; }
+}
+
+/* ─── FAQ (editorial, details/summary – kein JS nötig) ──────────────────── */
+.faq-list {
+  border-top: 1px solid var(--border);
+  max-width: 860px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-question {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 28px 8px 28px 0;
+  cursor: pointer;
+  list-style: none;
+  transition: background var(--transition);
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question:hover { background: rgba(255, 255, 255, 0.015); }
+.faq-number {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--text-subtle);
+  flex-shrink: 0;
+}
+.faq-q-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--text-primary);
+  flex: 1;
+}
+.faq-toggle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  align-self: center;
+}
+.faq-toggle::before,
+.faq-toggle::after {
+  content: '';
+  position: absolute;
+  background: var(--text-muted);
+  transition: transform var(--transition), background var(--transition);
+}
+.faq-toggle::before { top: 50%; left: 0; right: 0; height: 1px; }
+.faq-toggle::after  { left: 50%; top: 0; bottom: 0; width: 1px; }
+.faq-item[open] .faq-toggle::after { transform: rotate(90deg); }
+.faq-item[open] .faq-toggle::before,
+.faq-item[open] .faq-toggle::after { background: var(--text-primary); }
+.faq-answer {
+  padding: 0 38px 28px 0;
+  margin-left: calc(0.72rem * 2 + 24px);
+}
+.faq-answer p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+@media (max-width: 600px) {
+  .faq-question { gap: 14px; padding: 22px 4px 22px 0; }
+  .faq-q-text { font-size: 1.1rem; }
+  .faq-answer { margin-left: 0; padding-right: 8px; }
+}
+
+/* ─── Kontakt: Erstgespräch-Item (aktiviert via BOOKING_URL) ────────────── */
+a.booking-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: -16px 0 0 -16px;
+  transition: border-color var(--transition), background var(--transition);
+}
+a.booking-item:hover {
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.015);
+}
+a.booking-item[hidden] { display: none; }
+
+/* ─── Hero-Stats: dezente Zähler-Animation (JS setzt .counted) ──────────── */
+.stat-number { transition: opacity 0.3s ease; }
+
+/* ─── Reduzierte Bewegung: alle Loops & Reveals abschalten ──────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .filmstrip-track,
+  .testimonial-track,
+  .rec-dot { animation: none; }
+  .hero-title em { animation: none; }
+  .hero-badge, .hero-eyebrow, .hero-title, .hero-subtitle,
+  .hero-buttons, .hero-stats { animation: none; }
+  .fade-in { opacity: 1; transform: none; transition: none; }
+  .portfolio-item:hover .portfolio-yt-link { transform: none; }
+}
+
+/* ─── Kundenstimmen: dekorative O-Ton-Waveform ──────────────────────────── */
+.voice-wave {
+  display: block;
+  width: min(1100px, calc(100% - 48px));
+  height: 30px;
+  margin: -36px auto 44px;
+  fill: rgba(200, 210, 224, 0.16);
+}

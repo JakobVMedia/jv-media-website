@@ -1,28 +1,34 @@
-# JV Media - Video Editing Studio
+# JV Media – Video Editing Studio
 
-> Professional video editing for content creators and brands.
+> Professioneller Videoschnitt für Content Creator und Unternehmen. Studio in Bad Tölz (Bayern, Deutschland), Kunden in ganz DACH – Remote-Zusammenarbeit.
 
-## Services
-- Short-form video editing (Reels, TikToks, YouTube Shorts) - €99/video
-- Long-form video editing (YouTube, Podcasts, Interviews) - €249/video
-- Monthly packages - €899/month
+## Leistungen & Preise
+- Short-form Videoschnitt (Instagram Reels, TikToks, YouTube Shorts) – ab €99/Video, inkl. Color Grading, Captions, Sound Design, 2 Revisionen
+- Long-form Videoschnitt (YouTube, Podcasts, Interviews) – ab €249/Video, inkl. Color Grading, B-Roll, Untertitel, Thumbnail Design, unbegrenzte Revisionen
+- Monatliches Video-Paket – €899/Monat, Short- & Long-form kombiniert, priorisierte Bearbeitung, monatlicher Strategie-Call
+- Antwort auf Anfragen innerhalb von 24 Stunden
 
-## About
-Jakob Vrabitsch runs JV Media, a video editing studio based in Austria. Nearly 2 years of experience editing for YouTube creators and brands. Specializes in clean edits, good pacing, color grading, sound design, and captions.
+## Über uns
+Jakob Vrabitsch führt JV Media, ein Video-Editing-Studio mit Sitz in Bad Tölz (Bayern, Deutschland). 3+ Jahre Erfahrung, 200+ geschnittene Videos, 50+ zufriedene Kunden – von YouTube-Creatorn bis zu Marken. Spezialisiert auf cleane Schnitte, starkes Pacing, Color Grading, Sound Design und Captions.
 
 ## Team
-- Jakob - Founder & Lead Editor
-- Tyrone - Video Editor
+- Jakob Vrabitsch – Founder & Lead Editor
+- Tyrone – Video Editor
+
+## Wichtige Seiten
+- [Startseite mit Preisen & FAQ](https://vrabitsch-media.com/)
+- [Portfolio (YouTube-Videos & Reels)](https://vrabitsch-media.com/portfolio.html)
+- [YouTube Video Editor](https://vrabitsch-media.com/youtube-video-editor.html)
+- [Videoschnitt Freelancer](https://vrabitsch-media.com/videoschnitt-freelancer.html)
 
 ## Blog
-- [Warum professioneller Videoschnitt dein YouTube-Wachstum beschleunigt](/blog/videoschnitt-youtube-wachstum.html)
-- [Warum guter Videoschnitt auf Social Media den Unterschied macht](/blog/videoschnitt-social-media.html)
-- [So findest du den richtigen Video Editor für deinen YouTube-Kanal](/blog/video-editor-finden.html)
+- [Warum professioneller Videoschnitt dein YouTube-Wachstum beschleunigt](https://vrabitsch-media.com/blog/videoschnitt-youtube-wachstum.html)
+- [Warum guter Videoschnitt auf Social Media den Unterschied macht](https://vrabitsch-media.com/blog/videoschnitt-social-media.html)
+- [So findest du den richtigen Video Editor für deinen YouTube-Kanal](https://vrabitsch-media.com/blog/video-editor-finden.html)
+- [YouTube Shorts schneiden](https://vrabitsch-media.com/blog/youtube-shorts-schneiden.html)
+- [KI im Videoschnitt richtig nutzen](https://vrabitsch-media.com/blog/ki-videoschnitt-content-creator.html)
 
-## Contact
-Website: https://vrabitsch-media.com
-Portfolio: https://vrabitsch-media.com/portfolio.html
-
-## Service Pages
-- [YouTube Video Editor](/youtube-video-editor.html)
-- [Videoschnitt Freelancer](/videoschnitt-freelancer.html)
+## Kontakt
+- E-Mail: jakob@vrabitsch-media.com
+- Instagram: https://www.instagram.com/cutby.jakob
+- Website: https://vrabitsch-media.com

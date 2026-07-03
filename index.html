@@ -94,7 +94,7 @@
             "@type": "Offer",
             "name": "Monatliches Video-Paket",
             "description": "Short-form & Long-form Videos, priorisierte Bearbeitung, alle Features inklusive, monatlicher Strategie-Call",
-            "price": "599",
+            "price": "899",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock"
           }
@@ -110,7 +110,7 @@
           "name": "Was kostet professioneller Videoschnitt bei JV Media?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Short-form Videos (Reels, TikToks, YouTube Shorts) kosten ab €99 pro Video. Long-form Videos (YouTube, Podcasts, Interviews) ab €249 pro Video. Das monatliche All-inclusive-Paket ist für €599/Monat erhältlich."
+            "text": "Short-form Videos (Reels, TikToks, YouTube Shorts) kosten ab €99 pro Video. Long-form Videos (YouTube, Podcasts, Interviews) ab €249 pro Video. Das monatliche All-inclusive-Paket ist für €899/Monat erhältlich."
           }
         },
         {
@@ -188,7 +188,7 @@
 
       <div class="nav-right">
         <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Sprache umschalten"><span class="lang-toggle-label">EN</span></button>
-        <a href="#contact" class="nav-cta" data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
+        <a href="#contact" class="nav-cta" data-booking data-de="Anfrage stellen →" data-en="Get in touch →">Anfrage stellen →</a>
         <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menü öffnen">
           <span></span><span></span><span></span>
         </button>
@@ -202,7 +202,7 @@
       <a href="blog.html"  onclick="toggleMenu()" data-de="Blog"       data-en="Blog">Blog</a>
       <a href="#pricing"   onclick="toggleMenu()" data-de="Preise"     data-en="Pricing">Preise</a>
       <a href="#contact"   onclick="toggleMenu()" data-de="Kontakt"    data-en="Contact">Kontakt</a>
-      <a href="#contact"   onclick="toggleMenu()" class="btn btn-primary" data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
+      <a href="#contact"   onclick="toggleMenu()" class="btn btn-primary" data-booking data-de="Anfrage stellen" data-en="Get in touch">Anfrage stellen</a>
     </div>
   </nav>
 
@@ -221,8 +221,8 @@
         Professioneller Videoschnitt für Content Creator und Marken, die mit starken Videos auffallen wollen.
       </p>
       <div class="hero-buttons">
-        <a href="#contact"   class="btn btn-primary"  data-de="Anfrage stellen"    data-en="Get in touch">Anfrage stellen</a>
-        <a href="#portfolio" class="btn btn-ghost"  data-de="Portfolio ansehen" data-en="View portfolio">Portfolio ansehen →</a>
+        <a href="#contact"   class="btn btn-primary" data-booking data-de="Kostenloses Erstgespräch" data-en="Free intro call">Kostenloses Erstgespräch</a>
+        <a href="#portfolio" class="btn btn-ghost"  data-de="Portfolio ansehen →" data-en="View portfolio →">Portfolio ansehen →</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -240,6 +240,45 @@
       </div>
     </div>
   </section>
+
+  <!-- ══════════════ FILMSTRIP – laufendes Band echter Projekte ══════════════ -->
+  <a href="portfolio.html" class="hero-filmstrip" aria-label="Portfolio ansehen">
+    <div class="filmstrip-ruler" aria-hidden="true">
+      <span class="ruler-label" data-de="Timeline — Ausgewählte Arbeiten" data-en="Timeline — Selected work">Timeline — Ausgewählte Arbeiten</span>
+      <span class="ruler-ticks"></span>
+      <span class="ruler-tc"><span class="rec-dot"></span>REC&nbsp;<span id="filmstripTimecode">00:00:00:00</span></span>
+    </div>
+    <div class="filmstrip-viewport">
+    <div class="filmstrip-track">
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/bOmIYBGF8H4/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel"><img src="bilder/reel_6.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/2emoknZ6QXw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/vSA0R3XJyH0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/eh3W2tqRYkk/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel"><img src="bilder/reel_5.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/lx6sqP9SaDw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/JxUxLwJ42vA/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/EO3HH4ZGGGE/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel"><img src="bilder/reel_7.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/rLcrBP41ST0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame"><img src="https://img.youtube.com/vi/IrFGLcnUEcU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <!-- Duplikat für nahtlose Loop-Animation -->
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/bOmIYBGF8H4/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel" aria-hidden="true"><img src="bilder/reel_6.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/2emoknZ6QXw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/vSA0R3XJyH0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/eh3W2tqRYkk/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel" aria-hidden="true"><img src="bilder/reel_5.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/lx6sqP9SaDw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/JxUxLwJ42vA/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/EO3HH4ZGGGE/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame filmstrip-frame-reel" aria-hidden="true"><img src="bilder/reel_7.jpg" alt="" width="640" height="1136" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/rLcrBP41ST0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+      <div class="filmstrip-frame" aria-hidden="true"><img src="https://img.youtube.com/vi/IrFGLcnUEcU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></div>
+    </div>
+    </div>
+    <div class="filmstrip-playhead" aria-hidden="true"></div>
+  </a>
 
   <!-- ══════════════════════════════ SERVICES ══════════════════════════════ -->
   <section class="section" id="services">
@@ -371,46 +410,46 @@
 
       <div class="portfolio-grid">
 
-        <!-- 1: YouTube -->
+        <!-- 1: YouTube (2026-06-27) -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
-            <a href="https://www.youtube.com/watch?v=LkSAj-gTJmk" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/LkSAj-gTJmk/maxresdefault.jpg')">
+            <a href="https://www.youtube.com/watch?v=bOmIYBGF8H4" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/bOmIYBGF8H4/maxresdefault.jpg')">
               <div class="portfolio-yt-play"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
             </a>
           </div>
           <div class="portfolio-info">
             <span class="portfolio-tag" data-de="Long-form" data-en="Long-form">Long-form</span>
-            <span class="portfolio-title" data-de="OpenAI zahlt IHM $100M?" data-en="OpenAI pays HIM $100M?">OpenAI zahlt IHM $100M?</span>
+            <span class="portfolio-title" data-de="Mit KI Geld verdienen: Das funktioniert wirklich" data-en="Making money with AI: what actually works">Mit KI Geld verdienen: Das funktioniert wirklich</span>
           </div>
         </div>
 
-        <!-- 2: YouTube -->
+        <!-- 2: YouTube (2026-06-10) -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
-            <a href="https://www.youtube.com/watch?v=iIXqURG-MCQ" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/iIXqURG-MCQ/maxresdefault.jpg')">
+            <a href="https://www.youtube.com/watch?v=lx6sqP9SaDw" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/lx6sqP9SaDw/maxresdefault.jpg')">
               <div class="portfolio-yt-play"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
             </a>
           </div>
           <div class="portfolio-info">
             <span class="portfolio-tag" data-de="Long-form" data-en="Long-form">Long-form</span>
-            <span class="portfolio-title" data-de="Dein eigener AI-Mitarbeiter" data-en="Your own AI Employee">Dein eigener AI-Mitarbeiter</span>
+            <span class="portfolio-title" data-de="Einer schlägt hundert: Die Zukunft der Arbeit" data-en="One beats a hundred: the future of work">Einer schlägt hundert: Die Zukunft der Arbeit</span>
           </div>
         </div>
 
-        <!-- 3: YouTube -->
+        <!-- 3: YouTube (2026-05-06) -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
-            <a href="https://www.youtube.com/watch?v=PvvS3-jTcPI" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/PvvS3-jTcPI/maxresdefault.jpg')">
+            <a href="https://www.youtube.com/watch?v=2emoknZ6QXw" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/2emoknZ6QXw/maxresdefault.jpg')">
               <div class="portfolio-yt-play"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M8 5v14l11-7z"/></svg></div>
             </a>
           </div>
           <div class="portfolio-info">
             <span class="portfolio-tag" data-de="Long-form" data-en="Long-form">Long-form</span>
-            <span class="portfolio-title" data-de="Ekel bei Narzissten erkennen" data-en="Recognising Narcissists">Ekel bei Narzissten erkennen</span>
+            <span class="portfolio-title" data-de="Mein Wechsel zu Claude Code (Neues Agent Setup)" data-en="My switch to Claude Code (new agent setup)">Mein Wechsel zu Claude Code (Neues Agent Setup)</span>
           </div>
         </div>
 
-        <!-- 4: YouTube -->
+        <!-- 4: YouTube (2025-06-11, 84K Views) -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
             <a href="https://www.youtube.com/watch?v=vSA0R3XJyH0" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('https://img.youtube.com/vi/vSA0R3XJyH0/maxresdefault.jpg')">
@@ -418,7 +457,10 @@
             </a>
           </div>
           <div class="portfolio-info">
-            <span class="portfolio-tag" data-de="Long-form" data-en="Long-form">Long-form</span>
+            <div class="portfolio-meta-row">
+              <span class="portfolio-tag" data-de="Long-form" data-en="Long-form">Long-form</span>
+              <span class="portfolio-stat" data-de="84K Aufrufe" data-en="84K views">84K Aufrufe</span>
+            </div>
             <span class="portfolio-title" data-de="Senioren probieren Luxus-Ramen" data-en="Seniors try Luxury Ramen">Senioren probieren Luxus-Ramen</span>
           </div>
         </div>
@@ -426,30 +468,36 @@
         <!-- 5: Instagram Reel -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
-            <a href="https://www.instagram.com/reel/DUbcEj5CHq5/" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('bilder/reel_1.png')">
+            <a href="https://www.instagram.com/reel/DXCZelqCMFU/" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('bilder/reel_6.jpg')">
               <div class="portfolio-ig-play">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </a>
           </div>
           <div class="portfolio-info">
-            <span class="portfolio-tag" data-de="Short-form" data-en="Short-form">Short-form</span>
-            <span class="portfolio-title" data-de="Rente im @est.030 ausgeben" data-en="Spending the pension @est.030">Rente im @est.030 ausgeben</span>
+            <div class="portfolio-meta-row">
+              <span class="portfolio-tag" data-de="Short-form" data-en="Short-form">Short-form</span>
+              <span class="portfolio-stat" data-de="56K Likes" data-en="56K likes">56K Likes</span>
+            </div>
+            <span class="portfolio-title" data-de="Rente im KaDeWe ausgeben @omagehtsteil" data-en="Spending the pension at KaDeWe @omagehtsteil">Rente im KaDeWe ausgeben @omagehtsteil</span>
           </div>
         </div>
 
         <!-- 6: Instagram Reel -->
         <div class="portfolio-item fade-in">
           <div class="portfolio-thumb">
-            <a href="https://www.instagram.com/reel/DNTbqquIgsv/" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('bilder/reel_2.png')">
+            <a href="https://www.instagram.com/reel/DXrDsVyiJ4Y/" target="_blank" rel="noopener noreferrer" class="portfolio-yt-link" style="background-image:url('bilder/reel_5.jpg')">
               <div class="portfolio-ig-play">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </div>
             </a>
           </div>
           <div class="portfolio-info">
-            <span class="portfolio-tag" data-de="Short-form" data-en="Short-form">Short-form</span>
-            <span class="portfolio-title" data-de="Slushi Maschine @ninja.de" data-en="Slushi Machine @ninja.de">Slushi Maschine @ninja.de</span>
+            <div class="portfolio-meta-row">
+              <span class="portfolio-tag" data-de="Short-form" data-en="Short-form">Short-form</span>
+              <span class="portfolio-stat" data-de="51K Likes" data-en="51K likes">51K Likes</span>
+            </div>
+            <span class="portfolio-title" data-de="Welche Version ist besser? @omagehtsteil" data-en="Which version is better? @omagehtsteil">Welche Version ist besser? @omagehtsteil</span>
           </div>
         </div>
 
@@ -467,12 +515,242 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════ KUNDENSTIMMEN ══════════════════════════ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow" data-de="04 — Kundenstimmen" data-en="04 — Testimonials">04 — Kundenstimmen</div>
+        <h2><span data-de="Was Kunden" data-en="What clients">Was Kunden</span> <em data-de="sagen" data-en="say">sagen</em></h2>
+        <p data-de="Echtes Feedback aus echten Projekten – unverändert übernommen." data-en="Real feedback from real projects – quoted as written.">
+          Echtes Feedback aus echten Projekten – unverändert übernommen.
+        </p>
+      </div>
+    </div>
+
+    <!-- O-Ton-Waveform (dekorativ) -->
+      <svg class="voice-wave" viewBox="0 0 1200 32" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="13" width="5" height="6" rx="2.5"/><rect x="10" y="11" width="5" height="10" rx="2.5"/><rect x="20" y="9" width="5" height="14" rx="2.5"/><rect x="30" y="8" width="5" height="16" rx="2.5"/><rect x="40" y="5" width="5" height="22" rx="2.5"/><rect x="50" y="4" width="5" height="24" rx="2.5"/><rect x="60" y="5" width="5" height="22" rx="2.5"/><rect x="70" y="3" width="5" height="26" rx="2.5"/><rect x="80" y="4" width="5" height="24" rx="2.5"/><rect x="90" y="4" width="5" height="24" rx="2.5"/><rect x="100" y="4" width="5" height="24" rx="2.5"/><rect x="110" y="1" width="5" height="30" rx="2.5"/><rect x="120" y="5" width="5" height="22" rx="2.5"/><rect x="130" y="6" width="5" height="20" rx="2.5"/><rect x="140" y="6" width="5" height="20" rx="2.5"/><rect x="150" y="8" width="5" height="16" rx="2.5"/><rect x="160" y="12" width="5" height="8" rx="2.5"/><rect x="170" y="13" width="5" height="6" rx="2.5"/><rect x="180" y="9" width="5" height="14" rx="2.5"/><rect x="190" y="8" width="5" height="16" rx="2.5"/><rect x="200" y="4" width="5" height="24" rx="2.5"/><rect x="210" y="7" width="5" height="18" rx="2.5"/><rect x="220" y="5" width="5" height="22" rx="2.5"/><rect x="230" y="3" width="5" height="26" rx="2.5"/><rect x="240" y="3" width="5" height="26" rx="2.5"/><rect x="250" y="3" width="5" height="26" rx="2.5"/><rect x="260" y="3" width="5" height="26" rx="2.5"/><rect x="270" y="6" width="5" height="20" rx="2.5"/><rect x="280" y="4" width="5" height="24" rx="2.5"/><rect x="290" y="5" width="5" height="22" rx="2.5"/><rect x="300" y="11" width="5" height="10" rx="2.5"/><rect x="310" y="11" width="5" height="10" rx="2.5"/><rect x="320" y="12" width="5" height="8" rx="2.5"/><rect x="330" y="13" width="5" height="6" rx="2.5"/><rect x="340" y="10" width="5" height="12" rx="2.5"/><rect x="350" y="11" width="5" height="10" rx="2.5"/><rect x="360" y="8" width="5" height="16" rx="2.5"/><rect x="370" y="6" width="5" height="20" rx="2.5"/><rect x="380" y="5" width="5" height="22" rx="2.5"/><rect x="390" y="5" width="5" height="22" rx="2.5"/><rect x="400" y="8" width="5" height="16" rx="2.5"/><rect x="410" y="6" width="5" height="20" rx="2.5"/><rect x="420" y="6" width="5" height="20" rx="2.5"/><rect x="430" y="7" width="5" height="18" rx="2.5"/><rect x="440" y="7" width="5" height="18" rx="2.5"/><rect x="450" y="10" width="5" height="12" rx="2.5"/><rect x="460" y="9" width="5" height="14" rx="2.5"/><rect x="470" y="12" width="5" height="8" rx="2.5"/><rect x="480" y="11" width="5" height="10" rx="2.5"/><rect x="490" y="14" width="5" height="4" rx="2.5"/><rect x="500" y="12" width="5" height="8" rx="2.5"/><rect x="510" y="13" width="5" height="6" rx="2.5"/><rect x="520" y="12" width="5" height="8" rx="2.5"/><rect x="530" y="9" width="5" height="14" rx="2.5"/><rect x="540" y="11" width="5" height="10" rx="2.5"/><rect x="550" y="9" width="5" height="14" rx="2.5"/><rect x="560" y="8" width="5" height="16" rx="2.5"/><rect x="570" y="9" width="5" height="14" rx="2.5"/><rect x="580" y="9" width="5" height="14" rx="2.5"/><rect x="590" y="12" width="5" height="8" rx="2.5"/><rect x="600" y="11" width="5" height="10" rx="2.5"/><rect x="610" y="9" width="5" height="14" rx="2.5"/><rect x="620" y="9" width="5" height="14" rx="2.5"/><rect x="630" y="11" width="5" height="10" rx="2.5"/><rect x="640" y="12" width="5" height="8" rx="2.5"/><rect x="650" y="10" width="5" height="12" rx="2.5"/><rect x="660" y="12" width="5" height="8" rx="2.5"/><rect x="670" y="11" width="5" height="10" rx="2.5"/><rect x="680" y="14" width="5" height="4" rx="2.5"/><rect x="690" y="13" width="5" height="6" rx="2.5"/><rect x="700" y="10" width="5" height="12" rx="2.5"/><rect x="710" y="11" width="5" height="10" rx="2.5"/><rect x="720" y="10" width="5" height="12" rx="2.5"/><rect x="730" y="12" width="5" height="8" rx="2.5"/><rect x="740" y="9" width="5" height="14" rx="2.5"/><rect x="750" y="14" width="5" height="4" rx="2.5"/><rect x="760" y="13" width="5" height="6" rx="2.5"/><rect x="770" y="11" width="5" height="10" rx="2.5"/><rect x="780" y="12" width="5" height="8" rx="2.5"/><rect x="790" y="11" width="5" height="10" rx="2.5"/><rect x="800" y="12" width="5" height="8" rx="2.5"/><rect x="810" y="11" width="5" height="10" rx="2.5"/><rect x="820" y="11" width="5" height="10" rx="2.5"/><rect x="830" y="13" width="5" height="6" rx="2.5"/><rect x="840" y="14" width="5" height="4" rx="2.5"/><rect x="850" y="13" width="5" height="6" rx="2.5"/><rect x="860" y="12" width="5" height="8" rx="2.5"/><rect x="870" y="9" width="5" height="14" rx="2.5"/><rect x="880" y="8" width="5" height="16" rx="2.5"/><rect x="890" y="10" width="5" height="12" rx="2.5"/><rect x="900" y="12" width="5" height="8" rx="2.5"/><rect x="910" y="8" width="5" height="16" rx="2.5"/><rect x="920" y="12" width="5" height="8" rx="2.5"/><rect x="930" y="12" width="5" height="8" rx="2.5"/><rect x="940" y="9" width="5" height="14" rx="2.5"/><rect x="950" y="12" width="5" height="8" rx="2.5"/><rect x="960" y="12" width="5" height="8" rx="2.5"/><rect x="970" y="13" width="5" height="6" rx="2.5"/><rect x="980" y="14" width="5" height="4" rx="2.5"/><rect x="990" y="14" width="5" height="4" rx="2.5"/><rect x="1000" y="13" width="5" height="6" rx="2.5"/><rect x="1010" y="13" width="5" height="6" rx="2.5"/><rect x="1020" y="12" width="5" height="8" rx="2.5"/><rect x="1030" y="11" width="5" height="10" rx="2.5"/><rect x="1040" y="8" width="5" height="16" rx="2.5"/><rect x="1050" y="8" width="5" height="16" rx="2.5"/><rect x="1060" y="6" width="5" height="20" rx="2.5"/><rect x="1070" y="6" width="5" height="20" rx="2.5"/><rect x="1080" y="7" width="5" height="18" rx="2.5"/><rect x="1090" y="7" width="5" height="18" rx="2.5"/><rect x="1100" y="11" width="5" height="10" rx="2.5"/><rect x="1110" y="11" width="5" height="10" rx="2.5"/><rect x="1120" y="8" width="5" height="16" rx="2.5"/><rect x="1130" y="9" width="5" height="14" rx="2.5"/><rect x="1140" y="13" width="5" height="6" rx="2.5"/><rect x="1150" y="10" width="5" height="12" rx="2.5"/><rect x="1160" y="8" width="5" height="16" rx="2.5"/><rect x="1170" y="10" width="5" height="12" rx="2.5"/><rect x="1180" y="10" width="5" height="12" rx="2.5"/><rect x="1190" y="8" width="5" height="16" rx="2.5"/></svg>
+
+    <!-- Marquee-Band: volle Breite, kein Container -->
+    <div class="testimonial-marquee">
+      <div class="testimonial-track">
+
+        <!-- T. Erdmann -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text" data-de="Jakob hat mich über einen längeren Zeitraum bei meinen Videos unterstützt. Er hatte immer ein offenes Ohr für meine Wünsche und hat diese zuverlässig und sorgfältig umgesetzt. Er war sowohl für die Longversionen als auch für die Shorts zuständig und hat stets pünktlich geliefert. Absolute Empfehlung!" data-en="Jakob supported me with my videos over an extended period. He always listened to my ideas and delivered reliably and carefully. He handled both long-form videos and shorts, always on time. Highly recommended!">
+            Jakob hat mich über einen längeren Zeitraum bei meinen Videos unterstützt. Er hatte immer ein offenes Ohr für meine Wünsche und hat diese zuverlässig und sorgfältig umgesetzt. Er war sowohl für die Longversionen als auch für die Shorts zuständig und hat stets pünktlich geliefert. Absolute Empfehlung!
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">T. Erdmann</div>
+              <div class="testimonial-role">Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- thilosmiles – Fiverr -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text" data-de="Drittes Videoprojekt, das ich Jakob gegeben habe. Wieder sehr gute Kommunikation und dieses Mal hat er sich selbst übertroffen, was Kreativität beim Videoschnitt angeht. Ich bin begeistert vom Video und den Ideen, die Jakob eingebracht hat. Absolute Empfehlung! Vielen Dank, Jakob!" data-en="Third video project I gave to Jakob. Again very good communication and this time he has outdone himself when it comes to creativity in video editing. I'm thrilled with the video and the ideas Jakob came up with. Also best recommendation! Thank you so much, Jakob!">
+            Drittes Videoprojekt, das ich Jakob gegeben habe. Wieder sehr gute Kommunikation und dieses Mal hat er sich selbst übertroffen, was Kreativität beim Videoschnitt angeht. Ich bin begeistert vom Video und den Ideen, die Jakob eingebracht hat. Absolute Empfehlung! Vielen Dank, Jakob!
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">thilosmiles</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- teaaddicts – Fiverr -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text" data-de="Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Alles ist so geworden wie geplant. Wir freuen uns auf das nächste Projekt. Dank dieser Kooperation konnten wir unseren Workflow optimieren. Zuverlässige Partner wie Jakob helfen uns, den bestmöglichen Mehrwert zu liefern." data-en="Working with Jakob was very satisfying. Everything turned out as intended. We are looking forward to the next project edited by him. Thanks to this cooperation we are able to optimize our workflow. Reliable partners like Jakob help us deliver the best value possible.">
+            Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Alles ist so geworden wie geplant. Wir freuen uns auf das nächste Projekt. Dank dieser Kooperation konnten wir unseren Workflow optimieren. Zuverlässige Partner wie Jakob helfen uns, den bestmöglichen Mehrwert zu liefern.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">teaaddicts</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- unikatze – Fiverr -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text" data-de="Es war mir eine Freude, mit Jakob zu arbeiten. Er hatte großes Verständnis für meine Wünsche, selbst wenn ich sehr spezifische Dinge verlangt habe. Ich würde ihn jedem empfehlen, der guten Videoschnitt sucht, und freue mich auf die nächste Zusammenarbeit." data-en="It was a pleasure to work with Jakob. He was very understanding of my needs, even when I was requesting very specific things. I would highly recommend him to anyone looking for some good video editing and look forward to working with him again.">
+            Es war mir eine Freude, mit Jakob zu arbeiten. Er hatte großes Verständnis für meine Wünsche, selbst wenn ich sehr spezifische Dinge verlangt habe. Ich würde ihn jedem empfehlen, der guten Videoschnitt sucht, und freue mich auf die nächste Zusammenarbeit.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">U</div>
+            <div>
+              <div class="testimonial-name">unikatze</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · <span data-de="Kanada" data-en="Canada">Kanada</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jonasfrohner – Fiverr -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text" data-de="Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Angenehme Kommunikation, meine Bedürfnisse im Vordergrund, sämtliche Versprechungen wurden gehalten. Gerne wieder." data-en="Working with Jakob was very satisfying. Pleasant communication, my needs were always the priority, all promises were kept. Happy to work together again.">
+            Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Angenehme Kommunikation, meine Bedürfnisse im Vordergrund, sämtliche Versprechungen wurden gehalten. Gerne wieder.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">J</div>
+            <div>
+              <div class="testimonial-name">jonasfrohner</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ DUPLIKAT für nahtlose Loop-Animation ═══ -->
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">
+            Jakob hat mich über einen längeren Zeitraum bei meinen Videos unterstützt. Er hatte immer ein offenes Ohr für meine Wünsche und hat diese zuverlässig und sorgfältig umgesetzt. Er war sowohl für die Longversionen als auch für die Shorts zuständig und hat stets pünktlich geliefert. Absolute Empfehlung!
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">T. Erdmann</div>
+              <div class="testimonial-role">Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">
+            Drittes Videoprojekt, das ich Jakob gegeben habe. Wieder sehr gute Kommunikation und dieses Mal hat er sich selbst übertroffen, was Kreativität beim Videoschnitt angeht. Ich bin begeistert vom Video und den Ideen, die Jakob eingebracht hat. Absolute Empfehlung! Vielen Dank, Jakob!
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">thilosmiles</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">
+            Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Alles ist so geworden wie geplant. Wir freuen uns auf das nächste Projekt. Dank dieser Kooperation konnten wir unseren Workflow optimieren. Zuverlässige Partner wie Jakob helfen uns, den bestmöglichen Mehrwert zu liefern.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <div class="testimonial-name">teaaddicts</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">
+            Es war mir eine Freude, mit Jakob zu arbeiten. Er hatte großes Verständnis für meine Wünsche, selbst wenn ich sehr spezifische Dinge verlangt habe. Ich würde ihn jedem empfehlen, der guten Videoschnitt sucht, und freue mich auf die nächste Zusammenarbeit.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">U</div>
+            <div>
+              <div class="testimonial-name">unikatze</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · <span data-de="Kanada" data-en="Canada">Kanada</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">
+            Die Zusammenarbeit mit Jakob war sehr zufriedenstellend. Angenehme Kommunikation, meine Bedürfnisse im Vordergrund, sämtliche Versprechungen wurden gehalten. Gerne wieder.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">J</div>
+            <div>
+              <div class="testimonial-name">jonasfrohner</div>
+              <div class="testimonial-role"><span class="testimonial-fiverr">Fiverr</span> · Deutschland</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════════════════════════ ÜBER UNS ═══════════════════════════════ -->
   <section class="section" id="about">
     <div class="container">
 
       <div class="section-header fade-in">
-        <div class="section-eyebrow" data-de="04 — Studio" data-en="04 — Studio">04 — Studio</div>
+        <div class="section-eyebrow" data-de="05 — Studio" data-en="05 — Studio">05 — Studio</div>
         <h2 data-de="Das Team hinter JV Media" data-en="The team behind JV Media">Das Team hinter JV Media</h2>
         <p data-de="Wir sind kein großes Studio – wir sind zwei Leute, die Videos lieben und wissen, wie man Content baut, der wirklich performt." data-en="We're not a big studio – we're two people who love video and know how to build content that truly performs.">
           Wir sind kein großes Studio – wir sind zwei Leute, die Videos lieben und wissen, wie man Content baut, der wirklich performt.
@@ -529,7 +807,7 @@
   <section class="section" id="pricing">
     <div class="container">
       <div class="section-header fade-in">
-        <div class="section-eyebrow" data-de="05 — Pakete" data-en="05 — Packages">05 — Pakete</div>
+        <div class="section-eyebrow" data-de="06 — Pakete" data-en="06 — Packages">06 — Pakete</div>
         <h2><span data-de="Transparente" data-en="Transparent">Transparente</span> <em data-de="Preise" data-en="Pricing">Preise</em></h2>
         <p data-de="Keine versteckten Kosten. Wähle das Paket, das zu dir passt." data-en="No hidden fees. Choose the package that fits you best.">
           Keine versteckten Kosten. Wähle das Paket, das zu dir passt.
@@ -578,7 +856,7 @@
         <div class="pricing-card fade-in">
           <div class="pricing-name" data-de="Monatlich" data-en="Monthly">Monatlich</div>
           <div class="pricing-price">
-            <span class="price-amount">€599</span>
+            <span class="price-amount">€899</span>
             <span class="price-period" data-de="/Monat" data-en="/month">/Monat</span>
           </div>
           <ul class="pricing-features">
@@ -588,15 +866,94 @@
             <li data-de="Monatlicher Strategie-Call" data-en="Monthly strategy call">Monatlicher Strategie-Call</li>
             <li data-de="Persönlicher Ansprechpartner" data-en="Dedicated point of contact">Persönlicher Ansprechpartner</li>
           </ul>
-          <a href="#contact" class="btn btn-outline btn-full" data-de="Jetzt anfragen" data-en="Get started" data-package-de="Monatliches Paket (€599/Monat)" data-package-en="Monthly package (€599/month)" onclick="setPackage(this)">Jetzt anfragen</a>
+          <a href="#contact" class="btn btn-outline btn-full" data-de="Jetzt anfragen" data-en="Get started" data-package-de="Monatliches Paket (€899/Monat)" data-package-en="Monthly package (€899/month)" onclick="setPackage(this)">Jetzt anfragen</a>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- ════════════════════════════════ FAQ ════════════════════════════════ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-eyebrow" data-de="07 — FAQ" data-en="07 — FAQ">07 — FAQ</div>
+        <h2><span data-de="Häufige" data-en="Common">Häufige</span> <em data-de="Fragen" data-en="questions">Fragen</em></h2>
+      </div>
+
+      <div class="faq-list fade-in">
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-number">01</span>
+            <span class="faq-q-text" data-de="Was kostet professioneller Videoschnitt bei JV Media?" data-en="How much does professional video editing cost at JV Media?">Was kostet professioneller Videoschnitt bei JV Media?</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p data-de="Short-form Videos (Reels, TikToks, YouTube Shorts) kosten ab €99 pro Video. Long-form Videos (YouTube, Podcasts, Interviews) ab €249 pro Video. Das monatliche All-inclusive-Paket gibt es für €899/Monat – inklusive Short- und Long-form, priorisierter Bearbeitung und monatlichem Strategie-Call." data-en="Short-form videos (Reels, TikToks, YouTube Shorts) start at €99 per video. Long-form videos (YouTube, podcasts, interviews) start at €249 per video. The monthly all-inclusive package is €899/month – including short- and long-form, priority processing and a monthly strategy call.">
+              Short-form Videos (Reels, TikToks, YouTube Shorts) kosten ab €99 pro Video. Long-form Videos (YouTube, Podcasts, Interviews) ab €249 pro Video. Das monatliche All-inclusive-Paket gibt es für €899/Monat – inklusive Short- und Long-form, priorisierter Bearbeitung und monatlichem Strategie-Call.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-number">02</span>
+            <span class="faq-q-text" data-de="Für welche Plattformen schneidet JV Media Videos?" data-en="Which platforms does JV Media edit videos for?">Für welche Plattformen schneidet JV Media Videos?</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p data-de="Wir schneiden Videos für alle Social-Media-Plattformen: Instagram Reels, TikTok, YouTube Shorts, YouTube Long-form, Podcasts und Interviews – jeweils im passenden Format und mit plattformgerechtem Pacing." data-en="We edit videos for all social media platforms: Instagram Reels, TikTok, YouTube Shorts, YouTube long-form, podcasts and interviews – each in the right format with platform-appropriate pacing.">
+              Wir schneiden Videos für alle Social-Media-Plattformen: Instagram Reels, TikTok, YouTube Shorts, YouTube Long-form, Podcasts und Interviews – jeweils im passenden Format und mit plattformgerechtem Pacing.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-number">03</span>
+            <span class="faq-q-text" data-de="Wie viele Revisionen sind beim Videoschnitt inbegriffen?" data-en="How many revisions are included?">Wie viele Revisionen sind beim Videoschnitt inbegriffen?</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p data-de="Im Short-form Paket sind 2 Revisionen enthalten. Im Long-form Paket und im Monatspaket sind unbegrenzte Revisionen inklusive – wir arbeiten, bis es passt." data-en="The short-form package includes 2 revisions. The long-form package and the monthly package include unlimited revisions – we keep working until it's right.">
+              Im Short-form Paket sind 2 Revisionen enthalten. Im Long-form Paket und im Monatspaket sind unbegrenzte Revisionen inklusive – wir arbeiten, bis es passt.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-number">04</span>
+            <span class="faq-q-text" data-de="Wie schnell werden Videos fertiggestellt?" data-en="How fast are videos delivered?">Wie schnell werden Videos fertiggestellt?</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p data-de="Wir melden uns innerhalb von 24 Stunden nach deiner Anfrage. Die Lieferzeit hängt vom Projektumfang ab und wird im Erstgespräch verbindlich vereinbart – Kunden im Monatspaket werden priorisiert bearbeitet." data-en="We get back to you within 24 hours of your request. Delivery time depends on project scope and is agreed in the intro call – monthly-package clients get priority processing.">
+              Wir melden uns innerhalb von 24 Stunden nach deiner Anfrage. Die Lieferzeit hängt vom Projektumfang ab und wird im Erstgespräch verbindlich vereinbart – Kunden im Monatspaket werden priorisiert bearbeitet.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-number">05</span>
+            <span class="faq-q-text" data-de="Was ist im Long-form Videoschnitt Paket enthalten?" data-en="What's included in the long-form editing package?">Was ist im Long-form Videoschnitt Paket enthalten?</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p data-de="Das Long-form Paket (ab €249) umfasst professionellen Schnitt, Color Grading, B-Roll &amp; Übergänge, Sound Design &amp; Musik, Kapitelmarken &amp; Timestamps, Untertitel, Thumbnail Design und unbegrenzte Revisionen." data-en="The long-form package (from €249) includes professional editing, color grading, B-roll &amp; transitions, sound design &amp; music, chapter markers &amp; timestamps, subtitles, thumbnail design and unlimited revisions.">
+              Das Long-form Paket (ab €249) umfasst professionellen Schnitt, Color Grading, B-Roll &amp; Übergänge, Sound Design &amp; Musik, Kapitelmarken &amp; Timestamps, Untertitel, Thumbnail Design und unbegrenzte Revisionen.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ════════════════════════════════ CONTACT ════════════════════════════════ -->
-  <section class="section section-alt" id="contact">
+  <section class="section" id="contact">
     <div class="container">
       <div class="contact-grid">
 
@@ -604,7 +961,7 @@
         <div class="contact-info fade-in">
 
           <div class="contact-header">
-            <div class="section-eyebrow" data-de="06 — Kontakt" data-en="06 — Contact">06 — Kontakt</div>
+            <div class="section-eyebrow" data-de="08 — Kontakt" data-en="08 — Contact">08 — Kontakt</div>
             <h2 class="contact-title" data-de="Lass uns reden" data-en="Let's talk">Lass uns reden</h2>
             <p class="contact-subtitle"
                data-de="Starte noch heute durch. Wir melden uns innerhalb von 24 Stunden."
@@ -612,6 +969,21 @@
               Starte noch heute durch. Wir melden uns innerhalb von 24 Stunden.
             </p>
           </div>
+          <!-- Erstgespräch-Buchung: wird per script.js aktiviert, sobald BOOKING_URL gesetzt ist -->
+          <a class="contact-item booking-item" data-booking href="#contact" hidden>
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label" data-de="Erstgespräch" data-en="Intro call">Erstgespräch</div>
+              <span class="contact-value" data-de="15 Minuten buchen – kostenlos &amp; unverbindlich" data-en="Book 15 minutes – free &amp; no strings">15 Minuten buchen – kostenlos &amp; unverbindlich</span>
+            </div>
+          </a>
+
           <div class="contact-item">
             <div class="contact-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">

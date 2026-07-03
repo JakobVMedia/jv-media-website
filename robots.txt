@@ -3,18 +3,41 @@ Allow: /
 
 Sitemap: https://vrabitsch-media.com/sitemap.xml
 
-# AI Crawlers
-User-agent: GPTBot
+# ── AI-Crawler explizit erlauben (AEO) ──────────────────────────────────────
+# Hinweis: Wirkt nur, wenn im Cloudflare-Dashboard "Block AI Bots" /
+# "Managed robots.txt" deaktiviert ist – sonst liefert die WAF weiterhin 403.
+
+# OpenAI (ChatGPT Search zitiert nur Seiten, die OAI-SearchBot crawlen darf)
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Claude-Web
+User-agent: GPTBot
 Allow: /
 
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
+# Google Gemini Grounding (AI Overviews laufen über den normalen Googlebot)
+User-agent: Google-Extended
+Allow: /
+
+# Sonstige
 User-agent: Amazonbot
 Allow: /
